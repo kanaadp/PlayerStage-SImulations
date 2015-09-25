@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PlayerStage/n0se.cc&apos; to &apos;run.cc&apos;" description="Rename resource &apos;n0se.cc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="n0se.cc" name="run.cc" stamp="1356801201559" updateReferences="true"/>
+</session>

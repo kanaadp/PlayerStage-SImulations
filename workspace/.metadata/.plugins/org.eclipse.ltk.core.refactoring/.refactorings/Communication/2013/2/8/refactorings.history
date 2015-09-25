@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Communication/BlindControl.cc&apos; to &apos;CommuncationControl.cc&apos;" description="Rename resource &apos;BlindControl.cc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BlindControl.cc" name="CommuncationControl.cc" stamp="1361221555284" updateReferences="true"/>
+</session>

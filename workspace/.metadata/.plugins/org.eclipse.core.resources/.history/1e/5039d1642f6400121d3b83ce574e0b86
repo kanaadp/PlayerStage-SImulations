@@ -1,0 +1,178 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+using namespace std;
+using namespace PlayerCc;
+bool detectCrash(Position2dProxy *p2dProxy, int robotnum) {
+	if (p2dProxy->GetStall()) {
+
+		cerr << "Robot " << robotnum << " has crashed at " << "("
+				<< p2dProxy->GetXPos() << ", " << p2dProxy->GetYPos()
+				<< ")! \n";
+		return true;
+	} else {
+		return false;
+	}
+}
+
+bool lidarScan(RangerProxy *ranger) {
+	for (double checkangle = -M_PI / 6+M_PI; checkangle <= M_PI / 6+M_PI;
+			checkangle = checkangle + ranger->GetAngularRes()) {
+		double maxrange = ranger->GetMaxRange();
+		double checkrange = ranger->GetRange(checkangle);
+		cout << "(" << checkangle << ", " << checkrange << ")! \n";
+		if (checkrange < maxrange) {
+			cout << "There's something in the way!" << "\n";
+			return true;
+		}
+	}
+	return false;
+}
+
+int main() {
+	cout << "aasdfwarrioir";
+	bool turn = false;
+	int robotnum = 3;
+	bool crashed = false;
+	double DECELERATION = .5;
+	double basespeed = .25;
+	double turnspeed = .15;
+	try {
+		PlayerClient client("localhost");
+		Position2dProxy p2dProxy(&client, 1);
+		RangerProxy ranger(&client, 5);
+		SimulationProxy playerSim(&client, 0);
+		client.Read();
+		//cout << ranger.GetRange(0) << "..........";
+		cout << "Get Range Count = " << ranger.GetRangeCount() << "\n";
+		cout << "Get Max Range = " << ranger.GetMaxRange() << "\n";
+		cout << "Get Min Range  = " << ranger.GetMinRange() << "\n";
+		cout << "Get Max Angle = " << ranger.GetMaxAngle() << "\n";
+		cout << "Get Min Angle  = " << ranger.GetMinAngle() << "\n";
+		cout << "Get Angular Res = " << ranger.GetAngularRes() << "\n";
+
+		client.Read();
+		double LegOneMotion = basespeed;
+		double LegTwoMotion = basespeed;
+		double LegThreeMotion = basespeed;
+		double changeangle = M_PI / 4;
+		double robotx = p2dProxy.GetXPos();
+		double roboty = p2dProxy.GetYPos();
+		double robotyaw = p2dProxy.GetYaw();
+		cout << "robotx =" << robotx << "\n";
+		cout << "roboty =" << roboty << "\n";
+		cout << "robotyaw =" << robotyaw << "\n";
+		double checkrange = ranger.GetRange(M_PI);
+		cout << checkrange;
+
+		while (fabs(roboty) > 3.0 || fabs(robotx) > 3.0) {
+			cout << "LEG 1" << "\n";
+			//p2dProxy.SetSpeed(LegOneMotion, 0, 0);
+			client.Read();
+			robotx = p2dProxy.GetXPos();
+			roboty = p2dProxy.GetYPos();
+			robotyaw = p2dProxy.GetYaw();
+			client.Read();
+			lidarScan(&ranger);
+			/*if (lidarScan(&ranger)) {
+				cout << "There's something in the way!" << "\n";
+				LegOneMotion = LegOneMotion * DECELERATION;
+			}*/
+
+			if (detectCrash(&p2dProxy, robotnum)) {
+				crashed = true;
+				playerSim.SetPose2d((char *)string("car1").c_str(), 0, 0, 0);
+			}
+		}
+		if (crashed) {
+			return 0;
+		}
+		double idealangle = robotyaw + changeangle;
+		if (idealangle > M_PI) {
+			idealangle = idealangle - (2) * (M_PI);
+
+		}
+		if (turn) {
+			cout << "ideal angle =" << idealangle;
+			while (fabs(idealangle - robotyaw) > .05) {
+				//cout << "idang" << idealangle << "\n";
+				cout << "yaw movement" << "\n";
+				p2dProxy.SetSpeed(0, 0, turnspeed);
+				client.Read();
+				robotx = p2dProxy.GetXPos();
+				roboty = p2dProxy.GetYPos();
+				robotyaw = p2dProxy.GetYaw();
+
+				if (detectCrash(&p2dProxy, robotnum)) {
+					crashed = true;
+					break;
+				}
+			}
+			if (crashed) {
+				return 0;
+			}
+		}
+		while (fabs(roboty) < 3.0 && fabs(robotx) < 3.0) {
+			cout << "LEG 2" << "\n";
+			p2dProxy.SetSpeed(LegTwoMotion, 0, 0);
+			client.Read();
+			robotx = p2dProxy.GetXPos();
+			roboty = p2dProxy.GetYPos();
+			robotyaw = p2dProxy.GetYaw();
+			if (detectCrash(&p2dProxy, robotnum)) {
+				crashed = true;
+				break;
+			}
+		}
+		if (crashed) {
+			return 0;
+		}
+		if (turn) {
+			idealangle = robotyaw + changeangle + .05;
+			while (fabs(idealangle - robotyaw) > .1) {
+				//cout << "idang" << idealangle << "\n";
+				cout << "yaw movement" << "\n";
+				p2dProxy.SetSpeed(0, 0, turnspeed);
+				client.Read();
+				robotx = p2dProxy.GetXPos();
+				roboty = p2dProxy.GetYPos();
+				robotyaw = p2dProxy.GetYaw();
+				if (detectCrash(&p2dProxy, robotnum)) {
+					crashed = true;
+					break;
+				}
+			}
+			if (crashed) {
+				return 0;
+			}
+		}
+		while (fabs(roboty) < 18.0 || fabs(robotx) < 18.0) {
+			cout << "LEG 3" << "\n";
+			p2dProxy.SetSpeed(LegThreeMotion, 0, 0);
+			client.Read();
+			robotx = p2dProxy.GetXPos();
+			roboty = p2dProxy.GetYPos();
+			robotyaw = p2dProxy.GetYaw();
+			if (detectCrash(&p2dProxy, robotnum)) {
+				crashed = true;
+				break;
+			}
+		}
+		if (crashed) {
+			return 0;
+		}
+
+	} catch (PlayerCc::PlayerError &e) {
+		const char* c = e.GetErrorStr().c_str();
+		cout << c;
+	}
+	cout << "end";
+	return 0;
+}
+

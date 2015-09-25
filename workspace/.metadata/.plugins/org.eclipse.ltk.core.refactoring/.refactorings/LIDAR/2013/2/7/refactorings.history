@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LIDAR/pathfinder.cc&apos; to &apos;LidarControl.cc&apos;" description="Rename resource &apos;pathfinder.cc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="pathfinder.cc" name="LidarControl.cc" stamp="1360720971498" updateReferences="true"/>
+</session>

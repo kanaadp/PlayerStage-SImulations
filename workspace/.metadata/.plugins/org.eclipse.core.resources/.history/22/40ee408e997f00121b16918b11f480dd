@@ -1,0 +1,866 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+#include <sstream>
+using namespace std;
+using namespace PlayerCc;
+
+/**
+ * [0] Robot Num
+ * [1] Init Lane
+ * 	North = 1 - +
+ * 	East = 2 + +
+ * 	South = 3 + -
+ * 	West = 4 - -
+ * [2] Turning
+ *  Yes = 1
+ *  No = 0
+ *  ALL SPEEDS are divided by 100
+ * [3] Leg 1 Speed
+ * [4] Leg 2 Speed
+ * [5] Leg 3 Speed
+ * [6] Turning Speed
+ */
+struct intent {
+	int Robotnum;
+	int initLane;
+	bool turn;
+	double leg1;
+	double leg2;
+	double leg3;
+	double turnspeed;
+	double robotx;
+	double roboty;
+	double robotyaw;
+};
+namespace robotprops {
+intent properties;
+char * key;
+char * group = (char *) "Group";
+const double bufferzone = 1;
+double time;
+}
+bool detectCrash(Position2dProxy *p2dProxy, int robotnum) {
+	if (p2dProxy->GetStall()) {
+
+		cerr << "Robot " << robotnum << " has crashed at " << "("
+				<< p2dProxy->GetXPos() << ", " << p2dProxy->GetYPos()
+				<< ")! \n";
+		return true;
+	} else {
+		return false;
+	}
+}
+void onCrash(SimulationProxy *playerSim, int robotnum) {
+	stringstream ss;
+	ss << "car" << robotnum;
+	std::string cname = ss.str();
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Robot "
+			<< robotnum << ": " << cname
+			<< " has crashed and is now being removed" << "\n";
+	playerSim->SetPose2d((char*) cname.c_str(), 20, 22, 0);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Robot "
+			<< robotnum << ": " << cname << " has been removed and disabled"
+			<< "\n";
+}
+void victory(SimulationProxy *playerSim, int robotnum) {
+	stringstream ss;
+	ss << "car" << robotnum;
+	std::string cname = ss.str();
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Robot "
+			<< robotnum << ": " << " Congratulations! " << cname
+			<< " has run the gauntlet! It is now being removed." << "\n";
+	playerSim->SetPose2d((char*) cname.c_str(), 20, 22, 0);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Robot "
+			<< robotnum << ": " << cname << " has been removed and disabled!"
+			<< "\n";
+}
+bool broadcast(BlackBoardProxy * bb, intent *robotintent) {
+
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "Broadcasting" << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< robotintent->roboty << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< robotintent->robotx << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< robotintent->robotyaw << "\n";
+	player_blackboard_entry_t data;
+	data.data = new uint8_t[10];
+	data.data_count = 10;
+	data.data[0] = robotintent->Robotnum;
+	data.data[1] = robotintent->initLane;
+	data.data[2] = robotintent->turn;
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< robotintent->leg1 << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< robotintent->leg2 << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< robotintent->leg3 << "\n";
+
+	data.data[3] = (robotintent->leg1 * 100);
+	data.data[4] = (robotintent->leg2 * 100);
+	data.data[5] = (robotintent->leg3 * 100);
+	data.data[6] = (robotintent->turnspeed * 100);
+
+	double robotx = (robotintent->robotx + 10) * 10;
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << robotx
+			<< "<-----Robot x" << "\n";
+	data.data[7] = robotx;
+	double roboty = (robotintent->roboty + 10) * 10;
+	data.data[8] = roboty;
+	data.data[9] = (robotintent->robotyaw + M_PI) * 10;
+	double robotyaw = (robotintent->robotyaw + M_PI) * 10;
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << robotyaw
+			<< "<-----Robot yaw" << "\n";
+	data.key = robotprops::key;
+	data.key_count = 5;
+
+	data.group = robotprops::group;
+	data.group_count = 8;
+
+	time_t rawtime;
+	time(&rawtime);
+	data.timestamp_sec = rawtime;
+
+	try {
+		bb->SetEntry(data);
+	} catch (PlayerCc::PlayerError pe) {
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "FEHLER: " << pe.GetErrorStr() << endl;
+		return false;
+	}
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "Broadcasted!" << "\n";
+	return true;
+}
+bool collides(double& collisionx, double& collisiony, int initlane, bool turn) {
+	bool possible = false;
+	switch (robotprops::properties.initLane) {
+	case 1:
+		cout << "zere" << "\n";
+		// I'm in lane 1
+		switch (initlane) {
+		case 1:
+			// he's in lane 1
+			//TODO: same lanes
+			break;
+		case 2:
+			// he's in lane 2
+			possible = true;
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = -1;
+					collisiony = 1;
+				}
+			}
+			break;
+		case 3:
+			// he's in lane 3
+			if (robotprops::properties.turn == turn) {
+				//no collision path
+				return false;
+			} else {
+				possible = true;
+				//collision possibility
+			}
+			break;
+		case 4:
+			// he's in lane 4
+			possible = true;
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = -1;
+					collisiony = -1;
+				}
+			}
+			break;
+		}
+		break;
+	case 2:
+		cout << "bere" << "\n";
+		// I'm in lane 2
+		switch (initlane) {
+		case 1:
+			possible = true;
+			// he's in lane 1
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = -1;
+					collisiony = 1;
+				}
+			}
+			break;
+		case 2:
+			// he's in lane 2
+			//TODO: same lanes
+			break;
+		case 3:
+			possible = true;
+			// he's in lane 3
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = 1;
+					collisiony = 1;
+				}
+			}
+			break;
+		case 4:
+			// he's in lane 4
+			if (robotprops::properties.turn == turn) {
+				//no collision path
+				return false;
+			} else {
+				//collision possibility
+				possible = true;
+			}
+			break;
+		}
+		break;
+	case 3:
+		cout << "tere" << "\n";
+		// I'm in lane 3
+		switch (initlane) {
+		case 1:
+
+			// he's in lane 1
+			if (robotprops::properties.turn == turn) {
+				//no collision path
+				return false;
+			} else {
+				//collision possibility
+				possible = true;
+			}
+			break;
+		case 2:
+			possible = true;
+			// he's in lane 2
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = 1;
+					collisiony = 1;
+				}
+			}
+			break;
+		case 3:
+			// he's in lane 3
+			//TODO: same lanes
+			break;
+		case 4:
+			possible = true;
+			// he's in lane 4
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = 1;
+					collisiony = -1;
+				}
+			}
+			break;
+		}
+		break;
+	case 4:
+		cout << "Here" << "\n";
+		switch (initlane) {
+		case 1:
+			possible = true;
+			// he's in lane 1
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = -1;
+					collisiony = -1;
+				}
+			}
+			break;
+		case 2:
+			// he's in lane 2
+			if (robotprops::properties.turn == turn) {
+				//no collision path
+				return false;
+			} else {
+				possible = true;
+				//collision possibility
+			}
+			break;
+		case 3:
+
+			possible = true;
+			// he's in lane 3
+			if (robotprops::properties.turn) {
+				//I'm turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+
+				}
+			} else {
+				//I'm not turning
+				if (turn) {
+					//He's turning
+
+				} else {
+					//He's not turning
+					collisionx = 1;
+					collisiony = -1;
+				}
+			}
+			break;
+		case 4:
+			// he's in lane 4
+			//TODO: same lanes
+			break;
+		}
+		break;
+	}
+	cout << "collisionx = " << collisionx << "\n";
+	cout << "collisiony = " << collisiony << "\n";
+
+	return possible;
+}
+double timeUntil(intent* props, double targetx, double targety,
+		double &distance, double &timetointersection) {
+	double time;
+	double robotx = props->robotx;
+	double roboty = props->roboty;
+	if (fabs(robotx) > 3 || fabs(roboty) > 3) {
+		double distancetointersection;
+
+		//calculate time to reach intersection
+		switch (props->initLane) {
+		case (1):
+			distancetointersection = roboty - 3;
+			roboty = 3;
+			break;
+		case (2):
+			distancetointersection = robotx - 3;
+			robotx = 3;
+			break;
+		case (3):
+			distancetointersection = fabs(roboty) - 3;
+			roboty = -3;
+			break;
+		case (4):
+			distancetointersection = fabs(robotx) - 3;
+			robotx = -3;
+			break;
+		}
+		timetointersection = distancetointersection / props->leg1;
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "Distance to intersection = " << distancetointersection
+				<< "\n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "Time to intersection = " << timetointersection << "\n";
+	}
+
+	double dx = targetx - robotx;
+	double dy = targety - roboty;
+	double idealyaw;
+	if (dy == 0) {
+		if (dx > 0) {
+			idealyaw = 0;
+		} else if (dx < 0) {
+			idealyaw = M_PI;
+		}
+	} else if (dx == 0) {
+		if (dy > 0) {
+			idealyaw = M_PI / 2;
+		} else if (dy < 0) {
+			idealyaw = -M_PI / 2;
+		}
+	} else {
+		idealyaw = atan(dx / dy);
+	}
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< props->robotyaw << "<--- Robotyaw \n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << idealyaw
+			<< "<--- Ideal yaw \n";
+	if (fabs(props->robotyaw - idealyaw) > .75) {
+		time = -1;
+	} else {
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << robotx
+				<< "<--- robotx \n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << roboty
+				<< "<--- roboty \n";
+		distance = sqrt(dx * dx + dy * dy);
+		time = distance / props->leg2;
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "Distance =" << distance << "\n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << "Time ="
+				<< time << "\n";
+	}
+	time = time + timetointersection;
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "ETA to collision = " << time << "\n";
+	return time;
+
+}
+bool process(intent *received) {
+
+	if (received->Robotnum == robotprops::properties.Robotnum) {
+		return false;
+	}
+	double collisionx = 0;
+	double collisiony = 0;
+
+	if (collides(collisionx, collisiony, received->initLane, received->turn)) {
+
+		collisionx = collisionx * 1.5;
+		collisiony = collisiony * 1.5;
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << "coly = "
+				<< collisiony << "\n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << "colx = "
+				<< collisionx << "\n";
+		if ((collisionx == 0) || (collisiony == 0)) {
+			cout << "Could not process path!" << "\n";
+			return false;
+		}
+		double hisdistance;
+		double mydistance;
+		double histimetilintersection;
+		double mytimetilintersection;
+		double etacollision = timeUntil(received, collisionx, collisiony,
+				hisdistance, histimetilintersection);
+		double myetacollision = timeUntil(&robotprops::properties, collisionx,
+				collisiony, mydistance, mytimetilintersection);
+		if (fabs(etacollision - myetacollision) < 1.5) {
+			cout << "Robot " << robotprops::properties.Robotnum << ": "
+					<< "Collision Predicted!" << "\n";
+			//double incspeed = (mydistance)	/ (etacollision - 2.25 - mytimetilintersection);
+			double safespeed;
+			//cout << "Robot " << robotprops::properties.Robotnum << ": "	<< "A safe increased speed is = " << incspeed << "\n";
+			//if (incspeed > 1 || incspeed <= 0) {
+			//cout << "Robot " << robotprops::properties.Robotnum << ": "<< "That's too high!." << "\n";
+			safespeed = (mydistance)
+					/ (etacollision + 2.25 - mytimetilintersection);
+			cout << "Robot " << robotprops::properties.Robotnum << ": "
+					<< "A safe speed is =" << safespeed;
+			robotprops::properties.leg2 = safespeed;
+			//} else {
+			//	robotprops::properties.leg2 = incspeed;
+			//}
+			return true;
+		} else {
+			cout << "Robot " << robotprops::properties.Robotnum << ": "
+					<< "No collision!";
+			return false;
+		}
+	} else {
+		cout << "No collision possible!" << "\n";
+		return false;
+	}
+}
+void recieve(playerc_blackboard_t *x, player_blackboard_entry_t output) {
+	PlayerClient client("localhost");
+	BlackBoardProxy bb(&client, 0);
+
+	time_t rawtime;
+	time(&rawtime);
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "Current Time = " << rawtime << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "Blackboard group: " << output.group << " updated @ "
+			<< output.timestamp_sec << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Key = "
+			<< output.key << "\n";
+	intent recievedprocess;
+	int datacount = output.data_count;
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "datacount ="
+			<< datacount << "\n";
+	printf("%u", output.data[0]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.Robotnum = output.data[0];
+
+	printf("%u", output.data[1]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.initLane = output.data[1];
+
+	printf("%u", output.data[2]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.turn = output.data[2];
+
+	double leg1 = output.data[3];
+	leg1 = leg1 / 100;
+	printf("%u", output.data[3]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.leg1 = leg1;
+
+	double leg2 = output.data[4];
+	leg2 = leg2 / 100;
+	printf("%u", output.data[4]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.leg2 = leg2;
+
+	double leg3 = output.data[5];
+	leg3 = leg3 / 100;
+	printf("%u", output.data[5]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.leg3 = leg3;
+
+	double turnspeed = output.data[6];
+	turnspeed = turnspeed / 100;
+	printf("%u", output.data[6]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	recievedprocess.turnspeed = turnspeed;
+
+	printf("%u", output.data[7]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	double robotx = output.data[7];
+	robotx = robotx / 10 - 10;
+	recievedprocess.robotx = robotx;
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << robotx
+			<< "\n";
+
+	printf("%u", output.data[8]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	double roboty = (output.data[8]);
+	roboty = (roboty) / 10 - 10;
+	recievedprocess.roboty = roboty;
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << roboty
+			<< "\n";
+
+	printf("%u", output.data[9]);
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "\n";
+	double robotyaw = output.data[9];
+	robotyaw = robotyaw / 10 - M_PI;
+	recievedprocess.robotyaw = robotyaw;
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << robotyaw
+			<< "\n";
+
+	if (output.timestamp_sec < robotprops::time) {
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "Old intent!" << "\n";
+	} else if (process(&recievedprocess)) {
+		broadcast(&bb, &robotprops::properties);
+	}
+
+	cout.flush();
+}
+int main(int argc, char* argv[]) {
+	const double changeangle = M_PI / 4;
+	double basespeed;
+	bool crashed = false;
+	char *group = (char *) "Group";
+	bool hotzone = false;
+
+//command line robot, robotprops::properties.turn, base speed, robotprops::properties.turn speed
+
+//Processing arguments
+	if (argc < 4) {
+		cerr << "Invalid number of arguments!" << "\n";
+		return 0;
+	}
+
+	robotprops::properties.Robotnum = atoi(argv[1]);
+
+	if (strcmp(argv[2], "1") == 0) {
+		robotprops::properties.turn = true;
+	} else {
+		robotprops::properties.turn = false;
+	}
+
+	basespeed = atof(argv[3]);
+
+	robotprops::properties.turnspeed = atof(argv[4]);
+
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Robot "
+			<< robotprops::properties.Robotnum << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Turning = "
+			<< robotprops::properties.turn << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "Base speed = " << basespeed << "\n";
+	cout << "Robot " << robotprops::properties.Robotnum << ": "
+			<< "Turn speed = " << robotprops::properties.turnspeed << "\n";
+
+//Begin Control code
+
+	stringstream ss;
+	ss << robotprops::properties.Robotnum;
+	robotprops::key = (char *) ss.str().c_str();
+	try {
+
+		//Register Proxies
+		PlayerClient client("localhost");
+		BlackBoardProxy bb(&client, 0);
+		Position2dProxy p2dProxy(&client, robotprops::properties.Robotnum);
+		RangerProxy ranger(&client, robotprops::properties.Robotnum);
+		SimulationProxy playerSim(&client, 0);
+
+		client.Read();
+
+		robotprops::properties.leg1 = basespeed;
+		robotprops::properties.leg2 = basespeed;
+		robotprops::properties.leg3 = basespeed;
+
+		robotprops::properties.robotx = p2dProxy.GetXPos();
+		robotprops::properties.roboty = p2dProxy.GetYPos();
+		robotprops::properties.robotyaw = p2dProxy.GetYaw();
+
+		//Determine initial lane
+		if (robotprops::properties.robotx > 0) {
+			if (robotprops::properties.roboty > 0) {
+				//east (2)
+				robotprops::properties.initLane = 2;
+			} else {
+				//south (3)
+				robotprops::properties.initLane = 3;
+
+			}
+		} else {
+			if (robotprops::properties.roboty > 0) {
+				//north (1)
+				robotprops::properties.initLane = 1;
+			} else {
+				//west (4)
+				robotprops::properties.initLane = 4;
+			}
+		}
+
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "robotprops::properties.robotxx ="
+				<< robotprops::properties.robotx << "\n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "robotprops::robotyy =" << robotprops::properties.roboty
+				<< "\n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "robotprops::properties.robotyawy ="
+				<< robotprops::properties.robotyaw << "\n";
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << "LEG 1"
+				<< "\n";
+		bb.SetEventHandler(*recieve);
+
+		//Begin Motion 1
+		while (fabs(robotprops::properties.roboty) > 3.0
+				|| fabs(robotprops::properties.robotx) > 3.0) {
+			//cout << "Robot " << robotprops::properties.Robotnum << ": "  << "LEG 1" << "\n";
+			client.Read();
+			robotprops::properties.robotx = p2dProxy.GetXPos();
+			robotprops::properties.roboty = p2dProxy.GetYPos();
+			robotprops::properties.robotyaw = p2dProxy.GetYaw();
+
+			if ((fabs(robotprops::properties.roboty) < 5.0
+					&& fabs(robotprops::properties.robotx) < 5.0) && !hotzone) {
+				broadcast(&bb, &robotprops::properties);
+				cout << "Robot " << robotprops::properties.Robotnum << ": "
+						<< "Entering Hotzone" << "\n";
+				time_t rawtime;
+				time(&rawtime);
+				robotprops::time = rawtime;
+				cout.flush();
+				bb.SubscribeToGroup((const char*) group);
+				hotzone = true;
+			}
+
+			p2dProxy.SetSpeed(robotprops::properties.leg1, 0, 0);
+
+			if (detectCrash(&p2dProxy, robotprops::properties.Robotnum)) {
+				onCrash(&playerSim, robotprops::properties.Robotnum);
+				crashed = true;
+				break;
+			}
+		}
+
+		if (crashed) {
+			return 0;
+		}
+		double idealangle = robotprops::properties.robotyaw + changeangle;
+		if (idealangle > M_PI) {
+			idealangle = idealangle - (2) * (M_PI);
+
+		}
+		if (robotprops::properties.turn) {
+			cout << "Robot " << robotprops::properties.Robotnum << ": "
+					<< "yaw movement" << "\n";
+			cout << "Robot " << robotprops::properties.Robotnum << ": "
+					<< "ideal angle =" << idealangle;
+			while (fabs(idealangle - robotprops::properties.robotyaw) > .05) {
+				//cout << "Robot " << robotprops::properties.Robotnum << ": "  << "yaw movement" << "\n";
+				p2dProxy.SetSpeed(0, 0, robotprops::properties.turnspeed);
+				client.Read();
+				robotprops::properties.robotx = p2dProxy.GetXPos();
+				robotprops::properties.roboty = p2dProxy.GetYPos();
+				robotprops::properties.robotyaw = p2dProxy.GetYaw();
+
+				if (detectCrash(&p2dProxy, robotprops::properties.Robotnum)) {
+					onCrash(&playerSim, robotprops::properties.Robotnum);
+					crashed = true;
+					break;
+				}
+			}
+			if (crashed) {
+				return 0;
+			}
+		}
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << "LEG 2"
+				<< "\n";
+		while (fabs(robotprops::properties.roboty) < 3.0
+				&& fabs(robotprops::properties.robotx) < 3.0) {
+			//cout << "Robot " << robotprops::properties.Robotnum << ": "  << "LEG 2" << "\n";
+			client.Read();
+			robotprops::properties.robotx = p2dProxy.GetXPos();
+			robotprops::properties.roboty = p2dProxy.GetYPos();
+			robotprops::properties.robotyaw = p2dProxy.GetYaw();
+			p2dProxy.SetSpeed(robotprops::properties.leg2, 0, 0);
+
+			if (detectCrash(&p2dProxy, robotprops::properties.Robotnum)) {
+				onCrash(&playerSim, robotprops::properties.Robotnum);
+				crashed = true;
+				break;
+			}
+		}
+		if (crashed) {
+			return 0;
+		}
+
+		if (robotprops::properties.turn) {
+			cout << "Robot " << robotprops::properties.Robotnum << ": "
+					<< "yaw movement" << "\n";
+			idealangle = robotprops::properties.robotyaw + changeangle + .05;
+			while (fabs(idealangle - robotprops::properties.robotyaw) > .1) {
+				//cout << "Robot " << robotprops::properties.Robotnum << ": "  << "idang" << idealangle << "\n";
+				//cout << "Robot " << robotprops::properties.Robotnum << ": "  << "yaw movement" << "\n";
+				p2dProxy.SetSpeed(0, 0, robotprops::properties.turnspeed);
+				client.Read();
+				robotprops::properties.robotx = p2dProxy.GetXPos();
+				robotprops::properties.roboty = p2dProxy.GetYPos();
+				robotprops::properties.robotyaw = p2dProxy.GetYaw();
+				if (detectCrash(&p2dProxy, robotprops::properties.Robotnum)) {
+					onCrash(&playerSim, robotprops::properties.Robotnum);
+					crashed = true;
+					break;
+				}
+			}
+			if (crashed) {
+				return 0;
+			}
+		}
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "Leaving Hotzone";
+		bb.UnsubscribeFromGroup((const char*) group);
+		hotzone = false;
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << "LEG 3"
+				<< "\n";
+		while (fabs(robotprops::properties.roboty) < 4.0
+				&& fabs(robotprops::properties.robotx) < 4.0) {
+			client.Read();
+			robotprops::properties.robotx = p2dProxy.GetXPos();
+			robotprops::properties.roboty = p2dProxy.GetYPos();
+			robotprops::properties.robotyaw = p2dProxy.GetYaw();
+			p2dProxy.SetSpeed(robotprops::properties.leg3, 0, 0);
+		}
+		cout << "Robot " << robotprops::properties.Robotnum << ": "
+				<< "Victory!" << "\n";
+		victory(&playerSim, robotprops::properties.Robotnum);
+
+	} catch (PlayerCc::PlayerError &e) {
+		const char* c = e.GetErrorStr().c_str();
+		cout << "Robot " << robotprops::properties.Robotnum << ": " << c;
+	}
+	cout << "Robot " << robotprops::properties.Robotnum << ": " << "Finished!";
+	return 0;
+}
+

@@ -1,0 +1,121 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+
+#include <string.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+#include <sstream>
+using namespace std;
+using namespace PlayerCc;
+
+struct intent {
+	int Robotnum;
+	int initLane;
+	bool turn;
+	double leg1;
+	double leg2;
+	double leg3;
+	double turnspeed;
+};
+/**
+ * [0] Robot Num
+ * [1] Init Lane
+ * 	North = 1
+ * 	East = 2
+ * 	South = 3
+ * 	West = 4
+ * [2] Turning
+ *  Yes = 1
+ *  No = 0
+ *  ALL SPEEDS are divided by 100
+ * [3] Leg 1 Speed
+ * [4] Leg 2 Speed
+ * [5] Leg 3 Speed
+ * [6] Turning Speed
+ */
+char *group = (char *) "Group";
+bool broadcast(BlackBoardProxy bb, intent robotintent) {
+	stringstream ss;
+	ss << robotintent.Robotnum;
+	char *key = (char *)ss.str().c_str();
+	~ss();
+	player_blackboard_entry_t data;
+	cout << "asdf";
+	cout.flush();
+	data.data = new uint8_t[6];
+	data.data_count = 6;
+	data.data[0] = robotintent.Robotnum;
+	data.data[1] = robotintent.initLane;
+	data.data[2] = robotintent.turn;
+	data.data[3] = robotintent.leg1;
+	data.data[4] = robotintent.leg2;
+	data.data[5] = robotintent.leg3;
+	data.data[6] = robotintent.turnspeed;
+	cout << key;
+	cout.flush();
+	data.key = key;
+	data.key_count = 1;
+	data.group = group;
+	data.group_count = 5;
+	time_t rawtime;
+	time(&rawtime);
+	data.timestamp_sec = rawtime;
+	cout << "Sata has been passed";
+	cout.flush();
+
+
+	try {
+		//updating the key
+		cout <<"\n"<< "I'm here...." << "\n";
+		bb.SetEntry(data);
+		cout <<"\n"<< "I'm here!!" << "\n";
+		cout.flush();
+	} catch (PlayerError pe) {
+		cout << "FEHLER: " << pe.GetErrorStr() << endl;
+		return false;
+	}
+	return true;
+}
+
+int main(int argc, char **argv) {
+	cout << "Hello";
+	PlayerClient robot("localhost", 6665);
+	BlackBoardProxy bb(&robot, 0);
+
+
+	cout << "Howru";
+	intent testintent;
+	testintent.Robotnum = 1;
+	testintent.initLane = 2;
+
+	testintent.leg1 = .25;
+	testintent.leg2 = .25;
+	testintent.leg3 = .25;
+	testintent.turn = true;
+	testintent.turnspeed = .15;
+
+		broadcast(bb, testintent);
+/*
+	char *key = (char *) testintent.Robotnum;
+	player_blackboard_entry_t *output;
+	try {
+
+		output = bb.GetEntry(key, group);
+	} catch (PlayerError pe) {
+		cout << "FEHLER: " << pe.GetErrorStr() << endl;
+		return (-1);
+	}
+	printf("%u", output->data[0]);
+	printf("%u", output->data[1]);
+	printf("%u", output->data[2]);
+	printf("%u", output->data[3]);
+	printf("%u", output->data[4]);
+	printf("%u", output->data[5]);
+	printf("%u", output->data[6]);*/
+	cout << "finally....";
+}

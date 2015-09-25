@@ -1,0 +1,45 @@
+include "compactcar.inc"
+include "commtower.inc"
+include "map.inc"
+floorplan
+(
+ color "grey" 
+ name "intersection"
+ size [560.000 560.000 0.800]
+ pose [0.000 0.000 0.000 0.000]
+ bitmap "intersection.png"
+ obstacle_return 1
+ laser_return 1
+ ranger_return 1.000
+)
+floorplan
+(
+ color "goldenrod"
+ name "lane markers"
+ size [18.000 18.000 0.010]
+ pose [0.000 0.000 0.000 0.000]
+ bitmap "lanemarkers.png"
+ ranger_return 0
+ obstacle_return 0
+)
+compactcar
+(
+name "car1"
+pose [ 1.500 -7.000 0.000 90.000]
+color "yellow"
+gui_nose 1
+)
+compactcar
+(
+name "car2"
+pose [ -1.500 7.000 0.000 -90.000]
+color "yellow"
+gui_nose 1
+)
+compactcar
+(
+name "car3"
+pose [ 7.000 1.500 0.000 180.000]
+color "yellow"
+gui_nose 1
+)

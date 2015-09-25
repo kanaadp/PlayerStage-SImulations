@@ -1,0 +1,171 @@
+
+include "compactcar.inc"
+include "map.inc"
+
+# load an environment bitmap
+floorplan
+( 
+  color "grey"
+  name "intersection"
+  size [54.000 54.000 0.800]
+  pose [0.000 0.000 0.000 0.000]
+  bitmap "intersection.png"
+  obstacle_return 1
+  laser_return 1
+  ranger_return 1.000
+  blobfinder_return 1
+  fiducial_return 1
+)
+floorplan
+(
+  color "goldenrod"
+  names "lane markers"
+  size [18.000 18.000 0.010]
+  pose [0.000 0.000 0.000 0.000]
+  bitmap "lanemarkers.png"
+  ranger_return 0
+  obstacle_return 0
+)
+
+compactcar
+(
+  name "car1"
+  pose [ 1.500 -5.000 0.000 90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car2"
+  pose [ -1.500 5.000 0.000 -90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car3"
+  pose [ 5.00 1.500 0.000 180.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car4"
+  pose [ -5.000 -1.500 0.000 0.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car5"
+  pose [ 1.500 -6.000 0.000 90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car6"
+  pose [ -1.500 6.000 0.000 -90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car7"
+  pose [ 6.00 1.500 0.000 180.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car8"
+  pose [ -6.000 -1.500 0.000 0.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car9"
+  pose [ 1.500 -7.000 0.000 90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car10"
+  pose [ -1.500 7.000 0.000 -90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car11"
+  pose [ 7.00 1.500 0.000 180.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car12"
+  pose [ -7.000 -1.500 0.000 0.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car13"
+  pose [ 1.500 -8.000 0.000 90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car14"
+  pose [ -1.500 8.000 0.000 -90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car15"
+  pose [ 8.00 1.500 0.000 180.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car16"
+  pose [ -8.000 -1.500 0.000 0.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car17"
+  pose [ 1.500 -9.000 0.000 90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car18"
+  pose [ -1.500 9.000 0.000 -90.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car19"
+  pose [ 9.00 1.500 0.000 180.000]
+  color "yellow"
+  gui_nose 1
+)
+compactcar
+(
+  name "car20"
+  pose [ -9.000 -1.500 0.000 0.000]
+  color "yellow"
+  gui_nose 1
+)
+
+

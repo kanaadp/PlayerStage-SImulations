@@ -1,0 +1,149 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+
+#include <string.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+#include <sstream>
+using namespace std;
+using namespace PlayerCc;
+
+/**
+ * [0] Robot Num
+ * [1] Init Lane
+ * 	North = 1
+ * 	East = 2
+ * 	South = 3
+ * 	West = 4
+ * [2] Turning
+ *  Yes = 1
+ *  No = 0
+ *  ALL SPEEDS are divided by 100
+ * [3] Leg 1 Speed
+ * [4] Leg 2 Speed
+ * [5] Leg 3 Speed
+ * [6] Turning Speed
+ */
+struct intent {
+	int Robotnum;
+	int initLane;
+	bool turn;
+	double leg1;
+	double leg2;
+	double leg3;
+	double turnspeed;
+};
+namespace robotprops {
+intent properties;
+
+}
+void process(){
+cout <<"asdf";
+}
+
+
+void recieve(playerc_blackboard_t *x, player_blackboard_entry_t output) {
+	time_t rawtime;
+	time(&rawtime);
+	cout << "Current Time = " << rawtime << "\n";
+	cout << "Blackboard group: " << output.group << " updated @ "
+			<< output.timestamp_sec << "\n";
+	cout << "Key = " << output.key << "\n";
+	int datacount = output.data_count;
+	cout << "datacount =" << datacount << "\n";
+	printf("%u", output.data[0]);
+	cout << "\n";
+	robotprops::properties.Robotnum = output.data[0];
+
+	printf("%u", output.data[1]);
+	cout << "\n";
+	robotprops::properties.initLane = output.data[1];
+
+	printf("%u", output.data[2]);
+	cout << "\n";
+	robotprops::properties.turn = output.data[2];
+
+	printf("%u", output.data[3]);
+	cout << "\n";
+	robotprops::properties.leg1 = output.data[3]/100;
+
+	printf("%u", output.data[4]);
+	cout << "\n";
+	robotprops::properties.leg2 = output.data[4]/100;
+
+	printf("%u", output.data[5]);
+	cout << "\n";
+	robotprops::properties.leg3 = output.data[5]/100;
+
+	printf("%u", output.data[6]);
+	cout << "\n";
+	robotprops::properties.turnspeed = output.data[6]/100;
+
+	process();
+	cout << "finally....";
+	cout.flush();
+
+}
+
+bool broadcast(BlackBoardProxy * bb, intent *robotintent) {
+	char *key = (char *) "myKey";
+	char *group = (char *) "Group";
+
+	cout << "Broadcasting" << "\n";
+
+	player_blackboard_entry_t data;
+
+	data.data = new uint8_t[7];
+	data.data_count = 7;
+	data.data[0] = robotintent->Robotnum;
+	data.data[1] = robotintent->initLane;
+	data.data[2] = robotintent->turn;
+	data.data[3] = robotintent->leg1 * 100;
+	data.data[4] = robotintent->leg2 * 100;
+	data.data[5] = robotintent->leg3 * 100;
+	data.data[6] = robotintent->turnspeed * 100;
+	data.key = key;
+	data.key_count = 6;
+
+	data.group = group;
+	data.group_count = 8;
+
+	time_t rawtime;
+	time(&rawtime);
+	data.timestamp_sec = rawtime;
+
+	try {
+		bb->SetEntry(data);
+	} catch (PlayerError pe) {
+		cout << "FEHLER: " << pe.GetErrorStr() << endl;
+		return false;
+	}
+	cout << "Broadcasted!" << "\n";
+	return true;
+}
+int main(int argc, char **argv) {
+	char *group = (char *) "Group";
+	PlayerClient robot("localhost", 6665);
+	BlackBoardProxy bb(&robot, 0);
+	intent testintent;
+	testintent.Robotnum = 0;
+	testintent.initLane = 2;
+	testintent.leg1 = .25;
+	testintent.leg2 = .25;
+	testintent.leg3 = .25;
+	testintent.turn = true;
+	testintent.turnspeed = .155;
+	bb.SubscribeToGroup((const char*) group);
+	bb.SetEventHandler(*recieve);
+	broadcast(&bb, &testintent);
+
+	for (;;) {
+		robot.Read();
+	}
+	return 0;
+}

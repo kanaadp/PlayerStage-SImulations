@@ -1,0 +1,52 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+using namespace std;
+int main(int argc, char *argv[])
+{
+	try
+	{
+	printf("HAAAAAAAAALOOOOOOOOOOOOO");
+/*need to do this line in c++ only*/
+using namespace PlayerCc;
+PlayerClient robot("localhost");
+printf("pew pew pew");
+Position2dProxy p2dProxy(&robot,0);
+printf("yattah");
+
+	}
+	catch(PlayerCc::PlayerError &e)
+	{
+		const char* c = e.GetErrorStr().c_str();
+
+	}
+
+
+/*
+SonarProxy sonarProxy(&robot,0);
+BlobfinderProxy blobProxy(&robot,0);
+LaserProxy laserProxy(&robot,0);*/
+
+
+//enable motors
+p2dProxy.SetMotorEnable(1);
+
+while(true)
+{
+robot.Read();
+
+//control code
+}
+
+
+return 0;
+}
+
+
+

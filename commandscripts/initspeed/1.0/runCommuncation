@@ -1,0 +1,201 @@
+echo "BASE SPEED = .10"
+./../../../workspace/carcontrol/Debug/carcontrol 1 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 2 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 3 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 4 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 5 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 6 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 7 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 8 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 9 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 10 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 11 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 12 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 13 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 14 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 15 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 16 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 17 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 18 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 19 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 20 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 21 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 22 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 23 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 24 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 25 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 26 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 27 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 28 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 29 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 30 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 31 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 32 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 33 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 34 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 35 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 36 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 37 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 38 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 39 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 40 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 41 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 42 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 43 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 44 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 45 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 46 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 47 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 48 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 49 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 50 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 51 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 52 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 53 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 54 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 55 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 56 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 57 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 58 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 59 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 60 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 61 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 62 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 63 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 64 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 65 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 66 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 67 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 68 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 69 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 70 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 71 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 72 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 73 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 74 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 75 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 76 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 77 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 78 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 79 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 80 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 81 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 82 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 83 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 84 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 85 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 86 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 87 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 88 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 89 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 90 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 91 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 92 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 93 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 94 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 95 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 96 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 97 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 98 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 99 0 1.0 .15 &
+sleep 1
+./../../../workspace/carcontrol/Debug/carcontrol 100 0 1.0 .15 &
+sleep 1

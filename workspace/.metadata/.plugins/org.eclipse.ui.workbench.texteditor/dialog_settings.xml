@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="312" key="DIALOG_WIDTH"/>
+		<item value="162" key="DIALOG_Y_ORIGIN"/>
+		<item value="1280" key="DIALOG_X_ORIGIN"/>
+		<item value="437" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="initime" key="selection"/>
+		<list key="findhistory">
+			<item value="initime"/>
+			<item value="hotzone"/>
+			<item value="&#x09;cout"/>
+			<item value="cout"/>
+			<item value="cerr"/>
+			<item value="printf"/>
+			<item value="rawtime"/>
+			<item value="victory("/>
+		</list>
+		<list key="replacehistory">
+			<item value="//printf"/>
+			<item value="//cout"/>
+			<item value=" &lt;&lt;"/>
+			<item value=" //cout"/>
+			<item value="cout"/>
+			<item value=""/>
+			<item value="//&lt;&lt; &quot;"/>
+			<item value="cout &lt;&lt; &quot;Robot &quot; &lt;&lt; robotprops::properties.Robotnum &lt;&lt; &quot;: &quot;"/>
+		</list>
+	</section>
+</section>

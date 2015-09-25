@@ -1,0 +1,151 @@
+BASE SPEED = .10
+Robot 1: car1 has crashed and is now being removed
+Robot 2: car2 has crashed and is now being removed
+Robot 9: car9 has crashed and is now being removed
+Robot 10: car10 has crashed and is now being removed
+Robot 5: car5 has crashed and is now being removed
+Robot 6: car6 has crashed and is now being removed
+Robot 13: car13 has crashed and is now being removed
+Robot 14: car14 has crashed and is now being removed
+Robot 3:  Congratulations! car3 has run the gauntlet! It is now being removed.
+Robot 3:  Finished in = 39
+Robot 4:  Congratulations! car4 has run the gauntlet! It is now being removed.
+Robot 4:  Finished in = 39
+Robot 17: car17 has crashed and is now being removed
+Robot 18: car18 has crashed and is now being removed
+Robot 7:  Congratulations! car7 has run the gauntlet! It is now being removed.
+Robot 7:  Finished in = 43
+Robot 8:  Congratulations! car8 has run the gauntlet! It is now being removed.
+Robot 8:  Finished in = 43
+Robot 21: car21 has crashed and is now being removed
+Robot 22: car22 has crashed and is now being removed
+Robot 11:  Congratulations! car11 has run the gauntlet! It is now being removed.
+Robot 11:  Finished in = 47
+Robot 12:  Congratulations! car12 has run the gauntlet! It is now being removed.
+Robot 12:  Finished in = 47
+Robot 25: car25 has crashed and is now being removed
+Robot 26: car26 has crashed and is now being removed
+Robot 15:  Congratulations! car15 has run the gauntlet! It is now being removed.
+Robot 15:  Finished in = 51
+Robot 16:  Congratulations! car16 has run the gauntlet! It is now being removed.
+Robot 16:  Finished in = 51
+Robot 29: car29 has crashed and is now being removed
+Robot 30: car30 has crashed and is now being removed
+Robot 19:  Congratulations! car19 has run the gauntlet! It is now being removed.
+Robot 19:  Finished in = 55
+Robot 20:  Congratulations! car20 has run the gauntlet! It is now being removed.
+Robot 20:  Finished in = 55
+Robot 33: car33 has crashed and is now being removed
+Robot 34: car34 has crashed and is now being removed
+Robot 23:  Congratulations! car23 has run the gauntlet! It is now being removed.
+Robot 23:  Finished in = 60
+Robot 24:  Congratulations! car24 has run the gauntlet! It is now being removed.
+Robot 24:  Finished in = 60
+Robot 37: car37 has crashed and is now being removed
+Robot 38: car38 has crashed and is now being removed
+Robot 27:  Congratulations! car27 has run the gauntlet! It is now being removed.
+Robot 27:  Finished in = 64
+Robot 28:  Congratulations! car28 has run the gauntlet! It is now being removed.
+Robot 28:  Finished in = 64
+Robot 41: car41 has crashed and is now being removed
+Robot 42: car42 has crashed and is now being removed
+Robot 31:  Congratulations! car31 has run the gauntlet! It is now being removed.
+Robot 31:  Finished in = 68
+Robot 32:  Congratulations! car32 has run the gauntlet! It is now being removed.
+Robot 32:  Finished in = 68
+Robot 45: car45 has crashed and is now being removed
+Robot 46: car46 has crashed and is now being removed
+Robot 35:  Congratulations! car35 has run the gauntlet! It is now being removed.
+Robot 35:  Finished in = 72
+Robot 36:  Congratulations! car36 has run the gauntlet! It is now being removed.
+Robot 36:  Finished in = 72
+Robot 49: car49 has crashed and is now being removed
+Robot 50: car50 has crashed and is now being removed
+Robot 39:  Congratulations! car39 has run the gauntlet! It is now being removed.
+Robot 39:  Finished in = 76
+Robot 40:  Congratulations! car40 has run the gauntlet! It is now being removed.
+Robot 40:  Finished in = 76
+Robot 53: car53 has crashed and is now being removed
+Robot 54: car54 has crashed and is now being removed
+Robot 43:  Congratulations! car43 has run the gauntlet! It is now being removed.
+Robot 43:  Finished in = 79
+Robot 44:  Congratulations! car44 has run the gauntlet! It is now being removed.
+Robot 44:  Finished in = 79
+Robot 57: car57 has crashed and is now being removed
+Robot 58: car58 has crashed and is now being removed
+Robot 47:  Congratulations! car47 has run the gauntlet! It is now being removed.
+Robot 47:  Finished in = 83
+Robot 48:  Congratulations! car48 has run the gauntlet! It is now being removed.
+Robot 48:  Finished in = 83
+Robot 61: car61 has crashed and is now being removed
+Robot 62: car62 has crashed and is now being removed
+Robot 51:  Congratulations! car51 has run the gauntlet! It is now being removed.
+Robot 51:  Finished in = 87
+Robot 52:  Congratulations! car52 has run the gauntlet! It is now being removed.
+Robot 52:  Finished in = 87
+Robot 65: car65 has crashed and is now being removed
+Robot 66: car66 has crashed and is now being removed
+Robot 55:  Congratulations! car55 has run the gauntlet! It is now being removed.
+Robot 55:  Finished in = 91
+Robot 56:  Congratulations! car56 has run the gauntlet! It is now being removed.
+Robot 56:  Finished in = 91
+Robot 69: car69 has crashed and is now being removed
+Robot 70: car70 has crashed and is now being removed
+Robot 59:  Congratulations! car59 has run the gauntlet! It is now being removed.
+Robot 59:  Finished in = 95
+Robot 60:  Congratulations! car60 has run the gauntlet! It is now being removed.
+Robot 60:  Finished in = 95
+Robot 73: car73 has crashed and is now being removed
+Robot 74: car74 has crashed and is now being removed
+Robot 63:  Congratulations! car63 has run the gauntlet! It is now being removed.
+Robot 63:  Finished in = 99
+Robot 64:  Congratulations! car64 has run the gauntlet! It is now being removed.
+Robot 64:  Finished in = 98
+Robot 77: car77 has crashed and is now being removed
+Robot 78: car78 has crashed and is now being removed
+Robot 67:  Congratulations! car67 has run the gauntlet! It is now being removed.
+Robot 67:  Finished in = 102
+Robot 68:  Congratulations! car68 has run the gauntlet! It is now being removed.
+Robot 68:  Finished in = 102
+Robot 81: car81 has crashed and is now being removed
+Robot 82: car82 has crashed and is now being removed
+Robot 71:  Congratulations! car71 has run the gauntlet! It is now being removed.
+Robot 71:  Finished in = 106
+Robot 72:  Congratulations! car72 has run the gauntlet! It is now being removed.
+Robot 72:  Finished in = 106
+Robot 85: car85 has crashed and is now being removed
+Robot 86: car86 has crashed and is now being removed
+Robot 75:  Congratulations! car75 has run the gauntlet! It is now being removed.
+Robot 75:  Finished in = 110
+Robot 76:  Congratulations! car76 has run the gauntlet! It is now being removed.
+Robot 76:  Finished in = 110
+Robot 89: car89 has crashed and is now being removed
+Robot 90: car90 has crashed and is now being removed
+Robot 79:  Congratulations! car79 has run the gauntlet! It is now being removed.
+Robot 79:  Finished in = 114
+Robot 80:  Congratulations! car80 has run the gauntlet! It is now being removed.
+Robot 80:  Finished in = 114
+Robot 93: car93 has crashed and is now being removed
+Robot 94: car94 has crashed and is now being removed
+Robot 83:  Congratulations! car83 has run the gauntlet! It is now being removed.
+Robot 83:  Finished in = 117
+Robot 84:  Congratulations! car84 has run the gauntlet! It is now being removed.
+Robot 84:  Finished in = 117
+Robot 97: car97 has crashed and is now being removed
+Robot 98: car98 has crashed and is now being removed
+Robot 87:  Congratulations! car87 has run the gauntlet! It is now being removed.
+Robot 87:  Finished in = 121
+Robot 88:  Congratulations! car88 has run the gauntlet! It is now being removed.
+Robot 88:  Finished in = 121
+Robot 91:  Congratulations! car91 has run the gauntlet! It is now being removed.
+Robot 91:  Finished in = 125
+Robot 92:  Congratulations! car92 has run the gauntlet! It is now being removed.
+Robot 92:  Finished in = 125
+Robot 95:  Congratulations! car95 has run the gauntlet! It is now being removed.
+Robot 95:  Finished in = 129
+Robot 96:  Congratulations! car96 has run the gauntlet! It is now being removed.
+Robot 96:  Finished in = 129
+Robot 99:  Congratulations! car99 has run the gauntlet! It is now being removed.
+Robot 99:  Finished in = 132
+Robot 100:  Congratulations! car100 has run the gauntlet! It is now being removed.
+Robot 100:  Finished in = 132

@@ -1,0 +1,201 @@
+echo "BASE SPEED = .10"
+./../../../workspace/LIDAR/Debug/LIDAR 1 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 2 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 3 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 4 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 5 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 6 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 7 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 8 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 9 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 10 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 11 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 12 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 13 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 14 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 15 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 16 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 17 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 18 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 19 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 20 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 21 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 22 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 23 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 24 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 25 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 26 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 27 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 28 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 29 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 30 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 31 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 32 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 33 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 34 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 35 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 36 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 37 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 38 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 39 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 40 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 41 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 42 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 43 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 44 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 45 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 46 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 47 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 48 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 49 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 50 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 51 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 52 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 53 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 54 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 55 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 56 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 57 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 58 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 59 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 60 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 61 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 62 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 63 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 64 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 65 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 66 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 67 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 68 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 69 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 70 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 71 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 72 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 73 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 74 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 75 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 76 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 77 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 78 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 79 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 80 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 81 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 82 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 83 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 84 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 85 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 86 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 87 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 88 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 89 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 90 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 91 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 92 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 93 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 94 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 95 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 96 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 97 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 98 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 99 0 1.0 .15 &
+sleep 1
+./../../../workspace/LIDAR/Debug/LIDAR 100 0 1.0 .15 &
+sleep 1

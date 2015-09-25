@@ -1,0 +1,92 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+using namespace std;
+using namespace PlayerCc;
+void position_goto(PlayerClient* robot, Position2dProxy* pp,
+		player_pose2d_t target) {
+	cout << "hi==================================================";
+	using namespace PlayerCc;
+
+	double dist, angle;
+
+	dist = sqrt(
+			(target.px - pp->GetXPos()) * (target.px - pp->GetXPos())
+					+ (target.py - pp->GetYPos())
+							* (target.py - pp->GetYPos()));
+
+	angle = atan2(target.py - pp->GetYPos(), target.px - pp->GetXPos());
+
+	double newturnrate = 0;
+	double newspeed = 0;
+	bool gGotoDone = false;
+	while (!gGotoDone) {
+		if (fabs(rtod(angle)) > 10.0) {
+			newturnrate = limit((angle / M_PI) * 40.0, -40.0, 40.0);
+			newturnrate = dtor(newturnrate);
+		} else {
+			newturnrate = 0.0;
+
+			if (dist > 0.05) {
+				newspeed = limit(dist * 0.200, -0.2, 0.2);
+			} else {
+				newspeed = 0.0;
+			}
+			if (fabs(newspeed) < 0.01)
+				gGotoDone = true;
+
+			pp->SetSpeed(newspeed, newturnrate);
+		}
+	}
+}
+int main(double argc, char *argv[]) {
+
+	double speedlimit = 10.0;
+	double TARGET_X = -5;
+	double TARGET_Y = 1.5;
+	try {
+		PlayerClient robot("localhost");
+		Position2dProxy p2dProxy(&robot, 1);
+		robot.Read();
+		double robotx = p2dProxy.GetXPos();
+		double roboty = p2dProxy.GetYPos();
+		double robotyaw = p2dProxy.GetYaw();
+		cout << "targetx =" << TARGET_X << "\n";
+		cout << "targety =" << TARGET_Y << "\n";
+		cout << "robotx =" << robotx << "\n";
+		cout << "roboty =" << roboty << "\n";
+		cout << "n0se";
+		cout << "robotyaw =" << robotyaw << "\n";
+		player_pose2d_t t1loc;
+		t1loc.px = 0.0;
+		t1loc.py = 0.0;
+		t1loc.pa = M_PI;
+		cout << "n0se";
+		player_pose2d_t t1vel;
+		t1vel.px = 30.0;
+		t1vel.py = 0;
+		t1vel.pa = 0;
+		//p2dProxy.SetSpeed(30.0, 0, 0);
+		cout << "n0se";
+		position_goto(&robot, &p2dProxy, t1loc);
+		while (true) {
+			//p2dProxy.GoTo(t1loc, t1vel);
+			robot.Read();
+			double robotxspeed = p2dProxy.GetXSpeed();
+			cout << "Speed is " << robotxspeed << "\n";
+		}
+
+	} catch (PlayerCc::PlayerError &e) {
+		const char* c = e.GetErrorStr().c_str();
+		cout << c;
+	}
+	cout << "end";
+	return 0;
+}
+

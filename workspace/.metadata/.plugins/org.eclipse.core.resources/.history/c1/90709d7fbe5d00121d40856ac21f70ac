@@ -1,0 +1,100 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+using namespace std;
+using namespace PlayerCc;
+int main() {
+	bool turn = true;
+	double Waypoint1y = -3;
+
+	double Waypoint2y = 1.5;
+	double Waypoint2x = -3;
+	double FINAL_X = 18;
+	try {
+		PlayerClient robot("localhost");
+		Position2dProxy p2dProxy(&robot, 1);
+		robot.Read();
+		double robotx = p2dProxy.GetXPos();
+		double roboty = p2dProxy.GetYPos();
+		double robotyaw = p2dProxy.GetYaw();
+		cout << "robotx =" << robotx << "\n";
+		cout << "roboty =" << roboty << "\n";
+		cout << "robotyaw =" << robotyaw << "\n";
+		if (robotx > 3) {
+			cout << "A" << "\n";
+			//A
+		} else if (robotx < 0) {
+			cout << "B" << "\n";
+			//B
+		} else if (robotx < 3) {
+			cout << "D" << "\n";
+			cout << "C" << "\n";
+
+						if (turn) {
+							while (fabs(roboty) < 3.0 && fabs(robotx) < 3.0) {
+								cout << "forward movement" << "\n";
+								p2dProxy.SetSpeed(.25, 0, 0);
+								robot.Read();
+								robotx = p2dProxy.GetXPos();
+								roboty = p2dProxy.GetYPos();
+								robotyaw = p2dProxy.GetYaw();
+							}
+							double idealangle = atan2(Waypoint2y - roboty,
+									Waypoint2x - robotx);
+							while (robotyaw < idealangle) {
+								cout << idealangle << "\n";
+								cout << "yaw movement" << "\n";
+								p2dProxy.SetSpeed(0, 0, .15);
+								robot.Read();
+								robotx = p2dProxy.GetXPos();
+								roboty = p2dProxy.GetYPos();
+								robotyaw = p2dProxy.GetYaw();
+							}
+							cout << "nose";
+							while (robotx > Waypoint2x) {
+								cout << "x movement" << "\n";
+								p2dProxy.SetSpeed(1.0, 0, 0);
+								robot.Read();
+								robotx = p2dProxy.GetXPos();
+								roboty = p2dProxy.GetYPos();
+								robotyaw = p2dProxy.GetYaw();
+							}
+							while (M_PI - fabs(robotyaw) > .02) {
+								cout << "yaw movement" << "\n";
+								p2dProxy.SetSpeed(0, 0, .15);
+								robot.Read();
+								robotx = p2dProxy.GetXPos();
+								roboty = p2dProxy.GetYPos();
+								robotyaw = p2dProxy.GetYaw();
+								cout << M_PI - fabs(robotyaw) << "\n";
+							}
+							while (robotx > -FINAL_X) {
+								cout << "x movement" << "\n";
+								p2dProxy.SetSpeed(.25, 0, 0);
+								robot.Read();
+								robotx = p2dProxy.GetXPos();
+								roboty = p2dProxy.GetYPos();
+								robotyaw = p2dProxy.GetYaw();
+							}
+						}else{
+
+						}
+			//D
+		} else if (robotx > 0) {
+
+		}
+
+	} catch (PlayerCc::PlayerError &e) {
+		const char* c = e.GetErrorStr().c_str();
+		cout << c;
+	}
+	cout << "end";
+	return 0;
+}
+

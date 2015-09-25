@@ -1,0 +1,201 @@
+echo "BASE SPEED = .10"
+./../../../workspace/Blind/Debug/Blind 1 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 2 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 3 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 4 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 5 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 6 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 7 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 8 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 9 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 10 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 11 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 12 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 13 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 14 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 15 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 16 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 17 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 18 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 19 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 20 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 21 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 22 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 23 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 24 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 25 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 26 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 27 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 28 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 29 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 30 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 31 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 32 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 33 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 34 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 35 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 36 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 37 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 38 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 39 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 40 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 41 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 42 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 43 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 44 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 45 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 46 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 47 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 48 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 49 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 50 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 51 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 52 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 53 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 54 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 55 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 56 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 57 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 58 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 59 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 60 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 61 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 62 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 63 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 64 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 65 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 66 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 67 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 68 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 69 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 70 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 71 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 72 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 73 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 74 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 75 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 76 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 77 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 78 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 79 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 80 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 81 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 82 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 83 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 84 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 85 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 86 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 87 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 88 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 89 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 90 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 91 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 92 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 93 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 94 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 95 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 96 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 97 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 98 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 99 0 .75 .15 &
+sleep 1
+./../../../workspace/Blind/Debug/Blind 100 0 .75 .15 &
+sleep 1

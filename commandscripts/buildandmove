@@ -1,0 +1,10 @@
+echo "Moving to $1/$2"
+java createSim carcontrol $1_$2_Comm> runCommuncation
+java createSim LIDAR $1_$2_Lidar> runLidar
+java createSim Blind $1_$2_Blind> runBlind
+chmod 777 runCommuncation 
+chmod 777 runLidar
+chmod 777 runBlind
+mv runCommuncation $1/$2
+mv runLidar $1/$2
+mv runBlind $1/$2

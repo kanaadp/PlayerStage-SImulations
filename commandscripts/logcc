@@ -1,0 +1,2473 @@
+Robot 1: Robot 1
+Robot 1: Turning = 0
+Robot 1: Base speed = 0.75
+Robot 1: Turn speed = 0.15
+Robot 1: robotprops::properties.robotxx =1.5
+Robot 1: robotprops::robotyy =-5
+Robot 1: robotprops::properties.robotyawy =1.5708
+Robot 1: LEG 1
+Robot 1: Broadcasting
+Robot 1: -4.925
+Robot 1: 1.5
+Robot 1: 1.5708
+Robot 1: 0.75
+Robot 1: 0.75
+Robot 1: 0.75
+Robot 1: 115<-----Robot x
+Robot 1: 47.1239<-----Robot yaw
+Robot 1: Broadcasted!
+Robot 1: Entering Hotzone
+Robot 1: Current Time = 1361829762
+Robot 1: Blackboard group: Group updated @ 1361829761
+Robot 1: Key = 1
+Robot 1: datacount =10
+1Robot 1: 
+3Robot 1: 
+0Robot 1: 
+75Robot 1: 
+75Robot 1: 
+75Robot 1: 
+14Robot 1: 
+115Robot 1: 
+Robot 1: 1.5
+50Robot 1: 
+Robot 1: -5
+47Robot 1: 
+Robot 1: 1.55841
+Robot 3: Robot 3
+Robot 3: Turning = 0
+Robot 3: Base speed = 0.75
+Robot 3: Turn speed = 0.15
+Robot 3: robotprops::properties.robotxx =5
+Robot 3: robotprops::robotyy =1.5
+Robot 3: robotprops::properties.robotyawy =3.14159
+Robot 3: LEG 1
+Robot 3: Broadcasting
+Robot 3: 1.5
+Robot 3: 4.925
+Robot 3: 3.14159
+Robot 3: 0.75
+Robot 3: 0.75
+Robot 3: 0.75
+Robot 3: 149.25<-----Robot x
+Robot 3: 62.8319<-----Robot yaw
+Robot 3: Broadcasted!
+Robot 3: Entering Hotzone
+Robot 1: Current Time = 1361829764
+Robot 1: Blackboard group: Group updated @ 1361829764
+Robot 1: Key = 3
+Robot 1: datacount =10
+3Robot 1: 
+2Robot 1: 
+0Robot 1: 
+75Robot 1: 
+75Robot 1: 
+75Robot 1: 
+14Robot 1: 
+149Robot 1: 
+Robot 1: 4.9
+115Robot 1: 
+Robot 1: 1.5
+62Robot 1: 
+Robot 1: 3.05841
+Robot 1: coly = 1.5
+Robot 1: colx = 1.5
+Robot 1: Distance to intersection = 1.9
+Robot 1: Time to intersection = 2.53333
+Robot 1: 3.05841<--- Robotyaw 
+Robot 1: 3.14159<--- Ideal yaw 
+Robot 1: 3<--- robotx 
+Robot 1: 1.5<--- roboty 
+Robot 1: Distance =1.5
+Robot 1: Time =2
+Robot 1: ETA to collision = 4.53333
+Robot 1: Distance to intersection = 0.2
+Robot 1: Time to intersection = 0.266667
+Robot 1: 1.5708<--- Robotyaw 
+Robot 1: 1.5708<--- Ideal yaw 
+Robot 1: 1.5<--- robotx 
+Robot 1: -3<--- roboty 
+Robot 1: Distance =4.5
+Robot 1: Time =6
+Robot 1: ETA to collision = 6.26667
+Robot 1: No collision!Robot 3: Current Time = 1361829764
+Robot 3: Blackboard group: Group updated @ 1361829761
+Robot 3: Key = 1
+Robot 3: datacount =10
+1Robot 3: 
+3Robot 3: 
+0Robot 3: 
+75Robot 3: 
+75Robot 3: 
+75Robot 3: 
+14Robot 3: 
+115Robot 3: 
+Robot 3: 1.5
+50Robot 3: 
+Robot 3: -5
+47Robot 3: 
+Robot 3: 1.55841
+Robot 3: Old intent!
+Robot 3: Current Time = 1361829764
+Robot 3: Blackboard group: Group updated @ 1361829764
+Robot 3: Key = 3
+Robot 3: datacount =10
+3Robot 3: 
+2Robot 3: 
+0Robot 3: 
+75Robot 3: 
+75Robot 3: 
+75Robot 3: 
+14Robot 3: 
+149Robot 3: 
+Robot 3: 4.9
+115Robot 3: 
+Robot 3: 1.5
+62Robot 3: 
+Robot 3: 3.05841
+Robot 2: Robot 2
+Robot 2: Turning = 0
+Robot 2: Base speed = 0.75
+Robot 2: Turn speed = 0.15
+Robot 2: robotprops::properties.robotxx =-1.5
+Robot 2: robotprops::robotyy =5
+Robot 2: robotprops::properties.robotyawy =-1.5708
+Robot 2: LEG 1
+Robot 2: Broadcasting
+Robot 2: 4.925
+Robot 2: -1.5
+Robot 2: -1.5708
+Robot 2: 0.75
+Robot 2: 0.75
+Robot 2: 0.75
+Robot 2: 85<-----Robot x
+Robot 2: 15.708<-----Robot yaw
+Robot 2: Broadcasted!
+Robot 2: Entering Hotzone
+Robot 2: Current Time = 1361829766
+Robot 2: Blackboard group: Group updated @ 1361829761
+Robot 2: Key = 1
+Robot 2: datacount =10
+1Robot 2: 
+3Robot 2: 
+0Robot 2: 
+75Robot 2: 
+75Robot 2: 
+75Robot 2: 
+14Robot 2: 
+115Robot 2: 
+Robot 2: 1.5
+50Robot 2: 
+Robot 2: -5
+47Robot 2: 
+Robot 2: 1.55841
+Robot 2: Old intent!
+Robot 3: Current Time = 1361829766
+Robot 3: Blackboard group: Group updated @ 1361829766
+Robot 3: Key = 2
+Robot 3: datacount =10
+2Robot 3: 
+1Robot 3: 
+0Robot 3: 
+75Robot 3: 
+75Robot 3: 
+75Robot 3: 
+14Robot 3: 
+85Robot 3: 
+Robot 3: -1.5
+149Robot 3: 
+Robot 3: 4.9
+15Robot 3: 
+Robot 3: -1.64159
+Robot 3: coly = 1.5
+Robot 3: colx = -1.5
+Robot 3: Distance to intersection = 1.9
+Robot 3: Time to intersection = 2.53333
+Robot 3: -1.64159<--- Robotyaw 
+Robot 3: -1.5708<--- Ideal yaw 
+Robot 3: -1.5<--- robotx 
+Robot 3: 3<--- roboty 
+Robot 3: Distance =1.5
+Robot 3: Time =2
+Robot 3: ETA to collision = 4.53333
+Robot 3: Distance to intersection = 0.125
+Robot 3: Time to intersection = 0.166667
+Robot 3: 3.14159<--- Robotyaw 
+Robot 3: 3.14159<--- Ideal yaw 
+Robot 3: 3<--- robotx 
+Robot 3: 1.5<--- roboty 
+Robot 3: Distance =4.5
+Robot 3: Time =6
+Robot 3: ETA to collision = 6.16667
+Robot 3: No collision!Robot 1: LEG 2
+Robot 1: Current Time = 1361829766
+Robot 1: Blackboard group: Group updated @ 1361829766
+Robot 1: Key = 2
+Robot 1: datacount =10
+2Robot 1: 
+1Robot 1: 
+0Robot 1: 
+75Robot 1: 
+75Robot 1: 
+75Robot 1: 
+14Robot 1: 
+85Robot 1: 
+Robot 1: -1.5
+149Robot 1: 
+Robot 1: 4.9
+15Robot 1: 
+Robot 1: -1.64159
+No collision possible!
+Robot 2: Current Time = 1361829766
+Robot 2: Blackboard group: Group updated @ 1361829766
+Robot 2: Key = 2
+Robot 2: datacount =10
+2Robot 2: 
+1Robot 2: 
+0Robot 2: 
+75Robot 2: 
+75Robot 2: 
+75Robot 2: 
+14Robot 2: 
+85Robot 2: 
+Robot 2: -1.5
+149Robot 2: 
+Robot 2: 4.9
+15Robot 2: 
+Robot 2: -1.64159
+Robot 2: Current Time = 1361829766
+Robot 2: Blackboard group: Group updated @ 1361829764
+Robot 2: Key = 3
+Robot 2: datacount =10
+3Robot 2: 
+2Robot 2: 
+0Robot 2: 
+75Robot 2: 
+75Robot 2: 
+75Robot 2: 
+14Robot 2: 
+149Robot 2: 
+Robot 2: 4.9
+115Robot 2: 
+Robot 2: 1.5
+62Robot 2: 
+Robot 2: 3.05841
+Robot 2: Old intent!
+Robot 4: Robot 4
+Robot 4: Turning = 0
+Robot 4: Base speed = 0.75
+Robot 4: Turn speed = 0.15
+Robot 4: robotprops::properties.robotxx =-5
+Robot 4: robotprops::robotyy =-1.5
+Robot 4: robotprops::properties.robotyawy =0
+Robot 4: LEG 1
+Robot 4: Broadcasting
+Robot 4: -1.5
+Robot 4: -4.925
+Robot 4: 0
+Robot 4: 0.75
+Robot 4: 0.75
+Robot 4: 0.75
+Robot 4: 50.75<-----Robot x
+Robot 4: 31.4159<-----Robot yaw
+Robot 4: Broadcasted!
+Robot 4: Entering Hotzone
+Robot 2: LEG 2
+Robot 2: Current Time = 1361829771
+Robot 2: Blackboard group: Group updated @ 1361829771
+Robot 2: Key = 4
+Robot 2: datacount =10
+4Robot 2: 
+3Robot 2: 
+0Robot 2: 
+75Robot 2: 
+75Robot 2: 
+75Robot 2: 
+14Robot 2: 
+50Robot 2: 
+Robot 2: -5
+85Robot 2: 
+Robot 2: -1.5
+31Robot 2: 
+Robot 2: -0.0415927
+No collision possible!
+Robot 1: Current Time = 1361829771
+Robot 1: Blackboard group: Group updated @ 1361829771
+Robot 1: Key = 4
+Robot 1: datacount =10
+4Robot 1: 
+3Robot 1: 
+0Robot 1: 
+75Robot 1: 
+75Robot 1: 
+75Robot 1: 
+14Robot 1: 
+50Robot 1: 
+Robot 1: -5
+85Robot 1: 
+Robot 1: -1.5
+31Robot 1: 
+Robot 1: -0.0415927
+No collision possible!
+Robot 3: LEG 2
+Robot 3: Current Time = 1361829771
+Robot 3: Blackboard group: Group updated @ 1361829771
+Robot 3: Key = 4
+Robot 3: datacount =10
+4Robot 3: 
+3Robot 3: 
+0Robot 3: 
+75Robot 3: 
+75Robot 3: 
+75Robot 3: 
+14Robot 3: 
+50Robot 3: 
+Robot 3: -5
+85Robot 3: 
+Robot 3: -1.5
+31Robot 3: 
+Robot 3: -0.0415927
+Robot 3: coly = 1.5
+Robot 3: colx = 1.5
+Robot 3: Distance to intersection = -1.5
+Robot 3: Time to intersection = -2
+Robot 3: -0.0415927<--- Robotyaw 
+Robot 3: 0.965252<--- Ideal yaw 
+Robot 3: ETA to collision = -3
+Robot 3: 3.14159<--- Robotyaw 
+Robot 3: 0<--- Ideal yaw 
+Robot 3: ETA to collision = -1
+Robot 3: No collision!Robot 4: Current Time = 1361829771
+Robot 4: Blackboard group: Group updated @ 1361829761
+Robot 4: Key = 1
+Robot 4: datacount =10
+1Robot 4: 
+3Robot 4: 
+0Robot 4: 
+75Robot 4: 
+75Robot 4: 
+75Robot 4: 
+14Robot 4: 
+115Robot 4: 
+Robot 4: 1.5
+50Robot 4: 
+Robot 4: -5
+47Robot 4: 
+Robot 4: 1.55841
+Robot 4: Old intent!
+Robot 4: Current Time = 1361829771
+Robot 4: Blackboard group: Group updated @ 1361829766
+Robot 4: Key = 2
+Robot 4: datacount =10
+2Robot 4: 
+1Robot 4: 
+0Robot 4: 
+75Robot 4: 
+75Robot 4: 
+75Robot 4: 
+14Robot 4: 
+85Robot 4: 
+Robot 4: -1.5
+149Robot 4: 
+Robot 4: 4.9
+15Robot 4: 
+Robot 4: -1.64159
+Robot 4: Old intent!
+Robot 4: Current Time = 1361829771
+Robot 4: Blackboard group: Group updated @ 1361829764
+Robot 4: Key = 3
+Robot 4: datacount =10
+3Robot 4: 
+2Robot 4: 
+0Robot 4: 
+75Robot 4: 
+75Robot 4: 
+75Robot 4: 
+14Robot 4: 
+149Robot 4: 
+Robot 4: 4.9
+115Robot 4: 
+Robot 4: 1.5
+62Robot 4: 
+Robot 4: 3.05841
+Robot 4: Old intent!
+Robot 4: Current Time = 1361829772
+Robot 4: Blackboard group: Group updated @ 1361829771
+Robot 4: Key = 4
+Robot 4: datacount =10
+4Robot 4: 
+3Robot 4: 
+0Robot 4: 
+75Robot 4: 
+75Robot 4: 
+75Robot 4: 
+14Robot 4: 
+50Robot 4: 
+Robot 4: -5
+85Robot 4: 
+Robot 4: -1.5
+31Robot 4: 
+Robot 4: -0.0415927
+Robot 1: Leaving HotzoneRobot 1: LEG 3
+Robot 1: Victory!
+Robot 1: Robot 1:  Congratulations! car1 has run the gauntlet! It is now being removed.
+Robot 1: Robot 1: car1 has been removed and disabled!
+Robot 1: Finished!Robot 4: LEG 2
+Robot 5: Robot 5
+Robot 5: Turning = 0
+Robot 5: Base speed = 0.75
+Robot 5: Turn speed = 0.15
+Robot 5: robotprops::properties.robotxx =1.5
+Robot 5: robotprops::robotyy =-6
+Robot 5: robotprops::properties.robotyawy =1.5708
+Robot 5: LEG 1
+Robot 5: Broadcasting
+Robot 5: -4.95
+Robot 5: 1.5
+Robot 5: 1.5708
+Robot 5: 0.75
+Robot 5: 0.75
+Robot 5: 0.75
+Robot 5: 115<-----Robot x
+Robot 5: 47.1239<-----Robot yaw
+Robot 5: Broadcasted!
+Robot 5: Entering Hotzone
+Robot 5: Current Time = 1361829775
+Robot 5: Blackboard group: Group updated @ 1361829761
+Robot 5: Key = 1
+Robot 5: datacount =10
+1Robot 5: 
+3Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+115Robot 5: 
+Robot 5: 1.5
+50Robot 5: 
+Robot 5: -5
+47Robot 5: 
+Robot 5: 1.55841
+Robot 5: Old intent!
+Robot 5: Current Time = 1361829775
+Robot 5: Blackboard group: Group updated @ 1361829766
+Robot 5: Key = 2
+Robot 5: datacount =10
+2Robot 5: 
+1Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+85Robot 5: 
+Robot 5: -1.5
+149Robot 5: 
+Robot 5: 4.9
+15Robot 5: 
+Robot 5: -1.64159
+Robot 5: Old intent!
+Robot 2: Current Time = 1361829775
+Robot 2: Blackboard group: Group updated @ 1361829775
+Robot 2: Key = 5
+Robot 2: datacount =10
+5Robot 2: 
+3Robot 2: 
+0Robot 2: 
+75Robot 2: 
+75Robot 2: 
+75Robot 2: 
+14Robot 2: 
+115Robot 2: 
+Robot 2: 1.5
+50Robot 2: 
+Robot 2: -5
+47Robot 2: 
+Robot 2: 1.55841
+No collision possible!
+Robot 4: Robot 4: car4 has crashed and is now being removed
+Robot 4: Robot 4: car4 has been removed and disabled
+Robot 5: Current Time = 1361829775
+Robot 5: Blackboard group: Group updated @ 1361829764
+Robot 5: Key = 3
+Robot 5: datacount =10
+3Robot 5: 
+2Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+149Robot 5: 
+Robot 5: 4.9
+115Robot 5: 
+Robot 5: 1.5
+62Robot 5: 
+Robot 5: 3.05841
+Robot 5: Old intent!
+Robot 5: Current Time = 1361829775
+Robot 5: Blackboard group: Group updated @ 1361829771
+Robot 5: Key = 4
+Robot 5: datacount =10
+4Robot 5: 
+3Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+50Robot 5: 
+Robot 5: -5
+85Robot 5: 
+Robot 5: -1.5
+31Robot 5: 
+Robot 5: -0.0415927
+Robot 5: Old intent!
+Robot 5: Current Time = 1361829775
+Robot 5: Blackboard group: Group updated @ 1361829775
+Robot 5: Key = 5
+Robot 5: datacount =10
+5Robot 5: 
+3Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+115Robot 5: 
+Robot 5: 1.5
+50Robot 5: 
+Robot 5: -5
+47Robot 5: 
+Robot 5: 1.55841
+Robot 3: Robot 3
+Robot 3: Turning = 0
+Robot 3: Base speed = 0.75
+Robot 3: Turn speed = 0.15
+Robot 3: robotprops::properties.robotxx =1.475
+Robot 3: robotprops::robotyy =1.5
+Robot 3: robotprops::properties.robotyawy =3.14159
+Robot 3: LEG 1
+Robot 3: LEG 2
+Robot 3: Leaving HotzoneRobot 3: LEG 3
+Robot 3: Victory!
+Robot 3: Robot 3:  Congratulations! car3 has run the gauntlet! It is now being removed.
+Robot 3: Robot 3: car3 has been removed and disabled!
+Robot 3: Finished!Robot 3: Leaving HotzoneRobot 3: LEG 3
+Robot 3: Victory!
+Robot 3: Robot 3:  Congratulations! car3 has run the gauntlet! It is now being removed.
+Robot 3: Robot 3: car3 has been removed and disabled!
+Robot 3: Finished!Robot 6: Robot 6
+Robot 6: Turning = 0
+Robot 6: Base speed = 0.75
+Robot 6: Turn speed = 0.15
+Robot 6: robotprops::properties.robotxx =-1.5
+Robot 6: robotprops::robotyy =6
+Robot 6: robotprops::properties.robotyawy =-1.5708
+Robot 6: LEG 1
+Robot 6: Broadcasting
+Robot 6: 4.95
+Robot 6: -1.5
+Robot 6: -1.5708
+Robot 6: 0.75
+Robot 6: 0.75
+Robot 6: 0.75
+Robot 6: 85<-----Robot x
+Robot 6: 15.708<-----Robot yaw
+Robot 6: Broadcasted!
+Robot 6: Entering Hotzone
+Robot 6: Current Time = 1361829778
+Robot 6: Blackboard group: Group updated @ 1361829761
+Robot 6: Key = 1
+Robot 6: datacount =10
+1Robot 6: 
+3Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+115Robot 6: 
+Robot 6: 1.5
+50Robot 6: 
+Robot 6: -5
+47Robot 6: 
+Robot 6: 1.55841
+Robot 6: Old intent!
+Robot 5: Current Time = 1361829778
+Robot 5: Blackboard group: Group updated @ 1361829777
+Robot 5: Key = 6
+Robot 5: datacount =10
+6Robot 5: 
+1Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+85Robot 5: 
+Robot 5: -1.5
+149Robot 5: 
+Robot 5: 4.9
+15Robot 5: 
+Robot 5: -1.64159
+No collision possible!
+Robot 6: Current Time = 1361829778
+Robot 6: Blackboard group: Group updated @ 1361829766
+Robot 6: Key = 2
+Robot 6: datacount =10
+2Robot 6: 
+1Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+85Robot 6: 
+Robot 6: -1.5
+149Robot 6: 
+Robot 6: 4.9
+15Robot 6: 
+Robot 6: -1.64159
+Robot 6: Old intent!
+Robot 6: Current Time = 1361829778
+Robot 6: Blackboard group: Group updated @ 1361829764
+Robot 6: Key = 3
+Robot 6: datacount =10
+3Robot 6: 
+2Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+149Robot 6: 
+Robot 6: 4.9
+115Robot 6: 
+Robot 6: 1.5
+62Robot 6: 
+Robot 6: 3.05841
+Robot 6: Old intent!
+Robot 6: Current Time = 1361829778
+Robot 6: Blackboard group: Group updated @ 1361829771
+Robot 6: Key = 4
+Robot 6: datacount =10
+4Robot 6: 
+3Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+50Robot 6: 
+Robot 6: -5
+85Robot 6: 
+Robot 6: -1.5
+31Robot 6: 
+Robot 6: -0.0415927
+Robot 6: Old intent!
+Robot 6: Current Time = 1361829778
+Robot 6: Blackboard group: Group updated @ 1361829775
+Robot 6: Key = 5
+Robot 6: datacount =10
+5Robot 6: 
+3Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+115Robot 6: 
+Robot 6: 1.5
+50Robot 6: 
+Robot 6: -5
+47Robot 6: 
+Robot 6: 1.55841
+Robot 6: Old intent!
+Robot 6: Current Time = 1361829778
+Robot 6: Blackboard group: Group updated @ 1361829777
+Robot 6: Key = 6
+Robot 6: datacount =10
+6Robot 6: 
+1Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+85Robot 6: 
+Robot 6: -1.5
+149Robot 6: 
+Robot 6: 4.9
+15Robot 6: 
+Robot 6: -1.64159
+Robot 2: Leaving HotzoneRobot 2: LEG 3
+Robot 2: Victory!
+Robot 2: Robot 2:  Congratulations! car2 has run the gauntlet! It is now being removed.
+Robot 2: Robot 2: car2 has been removed and disabled!
+Robot 2: Finished!Robot 7: Robot 7
+Robot 7: Turning = 0
+Robot 7: Base speed = 0.75
+Robot 7: Turn speed = 0.15
+Robot 7: robotprops::properties.robotxx =6
+Robot 7: robotprops::robotyy =1.5
+Robot 7: robotprops::properties.robotyawy =3.14159
+Robot 7: LEG 1
+Robot 7: Broadcasting
+Robot 7: 1.5
+Robot 7: 4.95
+Robot 7: 3.14159
+Robot 7: 0.75
+Robot 7: 0.75
+Robot 7: 0.75
+Robot 7: 149.5<-----Robot x
+Robot 7: 62.8319<-----Robot yaw
+Robot 7: Broadcasted!
+Robot 7: Entering Hotzone
+Robot 5: LEG 2
+Robot 5: Current Time = 1361829780
+Robot 5: Blackboard group: Group updated @ 1361829780
+Robot 5: Key = 7
+Robot 5: datacount =10
+7Robot 5: 
+2Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+149Robot 5: 
+Robot 5: 4.9
+115Robot 5: 
+Robot 5: 1.5
+62Robot 5: 
+Robot 5: 3.05841
+Robot 5: coly = 1.5
+Robot 5: colx = 1.5
+Robot 5: Distance to intersection = 1.9
+Robot 5: Time to intersection = 2.53333
+Robot 5: 3.05841<--- Robotyaw 
+Robot 5: 3.14159<--- Ideal yaw 
+Robot 5: 3<--- robotx 
+Robot 5: 1.5<--- roboty 
+Robot 5: Distance =1.5
+Robot 5: Time =2
+Robot 5: ETA to collision = 4.53333
+Robot 5: 1.5708<--- Robotyaw 
+Robot 5: 1.5708<--- Ideal yaw 
+Robot 5: 1.5<--- robotx 
+Robot 5: -1.35<--- roboty 
+Robot 5: Distance =2.85
+Robot 5: Time =3.8
+Robot 5: ETA to collision = 3.8
+Robot 5: Collision Predicted!
+Robot 5: A safe speed is =0.420147Robot 5: Broadcasting
+Robot 5: -1.35
+Robot 5: 1.5
+Robot 5: 1.5708
+Robot 5: 0.75
+Robot 5: 0.420147
+Robot 5: 0.75
+Robot 5: 115<-----Robot x
+Robot 5: 47.1239<-----Robot yaw
+Robot 5: Broadcasted!
+Robot 6: Current Time = 1361829780
+Robot 6: Blackboard group: Group updated @ 1361829780
+Robot 6: Key = 7
+Robot 6: datacount =10
+7Robot 6: 
+2Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+149Robot 6: 
+Robot 6: 4.9
+115Robot 6: 
+Robot 6: 1.5
+62Robot 6: 
+Robot 6: 3.05841
+Robot 6: coly = 1.5
+Robot 6: colx = -1.5
+Robot 6: Distance to intersection = 1.9
+Robot 6: Time to intersection = 2.53333
+Robot 6: 3.05841<--- Robotyaw 
+Robot 6: 3.14159<--- Ideal yaw 
+Robot 6: 3<--- robotx 
+Robot 6: 1.5<--- roboty 
+Robot 6: Distance =4.5
+Robot 6: Time =6
+Robot 6: ETA to collision = 8.53333
+Robot 6: Distance to intersection = 0.225
+Robot 6: Time to intersection = 0.3
+Robot 6: -1.5708<--- Robotyaw 
+Robot 6: -1.5708<--- Ideal yaw 
+Robot 6: -1.5<--- robotx 
+Robot 6: 3<--- roboty 
+Robot 6: Distance =1.5
+Robot 6: Time =2
+Robot 6: ETA to collision = 2.3
+Robot 6: No collision!Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829761
+Robot 7: Key = 1
+Robot 7: datacount =10
+1Robot 7: 
+3Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+115Robot 7: 
+Robot 7: 1.5
+50Robot 7: 
+Robot 7: -5
+47Robot 7: 
+Robot 7: 1.55841
+Robot 7: Old intent!
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829766
+Robot 7: Key = 2
+Robot 7: datacount =10
+2Robot 7: 
+1Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+85Robot 7: 
+Robot 7: -1.5
+149Robot 7: 
+Robot 7: 4.9
+15Robot 7: 
+Robot 7: -1.64159
+Robot 7: Old intent!
+Robot 5: Current Time = 1361829780
+Robot 5: Blackboard group: Group updated @ 1361829780
+Robot 5: Key = 5
+Robot 5: datacount =10
+5Robot 5: 
+3Robot 5: 
+0Robot 5: 
+75Robot 5: 
+42Robot 5: 
+75Robot 5: 
+14Robot 5: 
+115Robot 5: 
+Robot 5: 1.5
+86Robot 5: 
+Robot 5: -1.4
+47Robot 5: 
+Robot 5: 1.55841
+Robot 6: Current Time = 1361829780
+Robot 6: Blackboard group: Group updated @ 1361829780
+Robot 6: Key = 5
+Robot 6: datacount =10
+5Robot 6: 
+3Robot 6: 
+0Robot 6: 
+75Robot 6: 
+42Robot 6: 
+75Robot 6: 
+14Robot 6: 
+115Robot 6: 
+Robot 6: 1.5
+86Robot 6: 
+Robot 6: -1.4
+47Robot 6: 
+Robot 6: 1.55841
+No collision possible!
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829764
+Robot 7: Key = 3
+Robot 7: datacount =10
+3Robot 7: 
+2Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+149Robot 7: 
+Robot 7: 4.9
+115Robot 7: 
+Robot 7: 1.5
+62Robot 7: 
+Robot 7: 3.05841
+Robot 7: Old intent!
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829771
+Robot 7: Key = 4
+Robot 7: datacount =10
+4Robot 7: 
+3Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+50Robot 7: 
+Robot 7: -5
+85Robot 7: 
+Robot 7: -1.5
+31Robot 7: 
+Robot 7: -0.0415927
+Robot 7: Old intent!
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829775
+Robot 7: Key = 5
+Robot 7: datacount =10
+5Robot 7: 
+3Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+115Robot 7: 
+Robot 7: 1.5
+50Robot 7: 
+Robot 7: -5
+47Robot 7: 
+Robot 7: 1.55841
+Robot 7: Old intent!
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829777
+Robot 7: Key = 6
+Robot 7: datacount =10
+6Robot 7: 
+1Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+85Robot 7: 
+Robot 7: -1.5
+149Robot 7: 
+Robot 7: 4.9
+15Robot 7: 
+Robot 7: -1.64159
+Robot 7: Old intent!
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829780
+Robot 7: Key = 7
+Robot 7: datacount =10
+7Robot 7: 
+2Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+149Robot 7: 
+Robot 7: 4.9
+115Robot 7: 
+Robot 7: 1.5
+62Robot 7: 
+Robot 7: 3.05841
+Robot 7: Current Time = 1361829780
+Robot 7: Blackboard group: Group updated @ 1361829780
+Robot 7: Key = 5
+Robot 7: datacount =10
+5Robot 7: 
+3Robot 7: 
+0Robot 7: 
+75Robot 7: 
+42Robot 7: 
+75Robot 7: 
+14Robot 7: 
+115Robot 7: 
+Robot 7: 1.5
+86Robot 7: 
+Robot 7: -1.4
+47Robot 7: 
+Robot 7: 1.55841
+Robot 7: coly = 1.5
+Robot 7: colx = 1.5
+Robot 7: 1.55841<--- Robotyaw 
+Robot 7: 1.5708<--- Ideal yaw 
+Robot 7: 1.5<--- robotx 
+Robot 7: -1.4<--- roboty 
+Robot 7: Distance =2.9
+Robot 7: Time =6.90476
+Robot 7: ETA to collision = 6.90476
+Robot 7: Distance to intersection = 1.95
+Robot 7: Time to intersection = 2.6
+Robot 7: 3.14159<--- Robotyaw 
+Robot 7: 3.14159<--- Ideal yaw 
+Robot 7: 3<--- robotx 
+Robot 7: 1.5<--- roboty 
+Robot 7: Distance =1.5
+Robot 7: Time =2
+Robot 7: ETA to collision = 4.6
+Robot 7: No collision!Robot 8: Robot 8
+Robot 8: Turning = 0
+Robot 8: Base speed = 0.75
+Robot 8: Turn speed = 0.15
+Robot 8: robotprops::properties.robotxx =-6
+Robot 8: robotprops::robotyy =-1.5
+Robot 8: robotprops::properties.robotyawy =0
+Robot 8: LEG 1
+Robot 8: Broadcasting
+Robot 8: -1.5
+Robot 8: -4.95
+Robot 8: 0
+Robot 8: 0.75
+Robot 8: 0.75
+Robot 8: 0.75
+Robot 8: 50.5<-----Robot x
+Robot 8: 31.4159<-----Robot yaw
+Robot 8: Broadcasted!
+Robot 8: Entering Hotzone
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829761
+Robot 8: Key = 1
+Robot 8: datacount =10
+1Robot 8: 
+3Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+115Robot 8: 
+Robot 8: 1.5
+50Robot 8: 
+Robot 8: -5
+47Robot 8: 
+Robot 8: 1.55841
+Robot 8: Old intent!
+Robot 5: Current Time = 1361829783
+Robot 5: Blackboard group: Group updated @ 1361829782
+Robot 5: Key = 8
+Robot 5: datacount =10
+8Robot 5: 
+3Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+50Robot 5: 
+Robot 5: -5
+85Robot 5: 
+Robot 5: -1.5
+31Robot 5: 
+Robot 5: -0.0415927
+No collision possible!
+Robot 6: LEG 2
+Robot 6: Current Time = 1361829783
+Robot 6: Blackboard group: Group updated @ 1361829782
+Robot 6: Key = 8
+Robot 6: datacount =10
+8Robot 6: 
+3Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+50Robot 6: 
+Robot 6: -5
+85Robot 6: 
+Robot 6: -1.5
+31Robot 6: 
+Robot 6: -0.0415927
+No collision possible!
+Robot 7: Current Time = 1361829783
+Robot 7: Blackboard group: Group updated @ 1361829782
+Robot 7: Key = 8
+Robot 7: datacount =10
+8Robot 7: 
+3Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+50Robot 7: 
+Robot 7: -5
+85Robot 7: 
+Robot 7: -1.5
+31Robot 7: 
+Robot 7: -0.0415927
+Robot 7: coly = 1.5
+Robot 7: colx = 1.5
+Robot 7: Distance to intersection = -1.5
+Robot 7: Time to intersection = -2
+Robot 7: -0.0415927<--- Robotyaw 
+Robot 7: 0.965252<--- Ideal yaw 
+Robot 7: ETA to collision = -3
+Robot 7: Distance to intersection = 0.075
+Robot 7: Time to intersection = 0.1
+Robot 7: 3.14159<--- Robotyaw 
+Robot 7: 3.14159<--- Ideal yaw 
+Robot 7: 3<--- robotx 
+Robot 7: 1.5<--- roboty 
+Robot 7: Distance =1.5
+Robot 7: Time =2
+Robot 7: ETA to collision = 2.1
+Robot 7: No collision!Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829766
+Robot 8: Key = 2
+Robot 8: datacount =10
+2Robot 8: 
+1Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+85Robot 8: 
+Robot 8: -1.5
+149Robot 8: 
+Robot 8: 4.9
+15Robot 8: 
+Robot 8: -1.64159
+Robot 8: Old intent!
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829764
+Robot 8: Key = 3
+Robot 8: datacount =10
+3Robot 8: 
+2Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+149Robot 8: 
+Robot 8: 4.9
+115Robot 8: 
+Robot 8: 1.5
+62Robot 8: 
+Robot 8: 3.05841
+Robot 8: Old intent!
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829771
+Robot 8: Key = 4
+Robot 8: datacount =10
+4Robot 8: 
+3Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+50Robot 8: 
+Robot 8: -5
+85Robot 8: 
+Robot 8: -1.5
+31Robot 8: 
+Robot 8: -0.0415927
+Robot 8: Old intent!
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829780
+Robot 8: Key = 5
+Robot 8: datacount =10
+5Robot 8: 
+3Robot 8: 
+0Robot 8: 
+75Robot 8: 
+42Robot 8: 
+75Robot 8: 
+14Robot 8: 
+115Robot 8: 
+Robot 8: 1.5
+86Robot 8: 
+Robot 8: -1.4
+47Robot 8: 
+Robot 8: 1.55841
+Robot 8: Old intent!
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829777
+Robot 8: Key = 6
+Robot 8: datacount =10
+6Robot 8: 
+1Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+85Robot 8: 
+Robot 8: -1.5
+149Robot 8: 
+Robot 8: 4.9
+15Robot 8: 
+Robot 8: -1.64159
+Robot 8: Old intent!
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829780
+Robot 8: Key = 7
+Robot 8: datacount =10
+7Robot 8: 
+2Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+149Robot 8: 
+Robot 8: 4.9
+115Robot 8: 
+Robot 8: 1.5
+62Robot 8: 
+Robot 8: 3.05841
+Robot 8: Old intent!
+Robot 8: Current Time = 1361829783
+Robot 8: Blackboard group: Group updated @ 1361829782
+Robot 8: Key = 8
+Robot 8: datacount =10
+8Robot 8: 
+3Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+50Robot 8: 
+Robot 8: -5
+85Robot 8: 
+Robot 8: -1.5
+31Robot 8: 
+Robot 8: -0.0415927
+Robot 9: Robot 9
+Robot 9: Turning = 0
+Robot 9: Base speed = 0.75
+Robot 9: Turn speed = 0.15
+Robot 9: robotprops::properties.robotxx =1.5
+Robot 9: robotprops::robotyy =-7
+Robot 9: robotprops::properties.robotyawy =1.5708
+Robot 9: LEG 1
+Robot 9: Broadcasting
+Robot 9: -4.975
+Robot 9: 1.5
+Robot 9: 1.5708
+Robot 9: 0.75
+Robot 9: 0.75
+Robot 9: 0.75
+Robot 9: 115<-----Robot x
+Robot 9: 47.1239<-----Robot yaw
+Robot 9: Broadcasted!
+Robot 9: Entering Hotzone
+Robot 5: Current Time = 1361829786
+Robot 5: Blackboard group: Group updated @ 1361829786
+Robot 5: Key = 9
+Robot 5: datacount =10
+9Robot 5: 
+3Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+115Robot 5: 
+Robot 5: 1.5
+50Robot 5: 
+Robot 5: -5
+47Robot 5: 
+Robot 5: 1.55841
+No collision possible!
+Robot 6: Current Time = 1361829786
+Robot 6: Blackboard group: Group updated @ 1361829786
+Robot 6: Key = 9
+Robot 6: datacount =10
+9Robot 6: 
+3Robot 6: 
+0Robot 6: 
+75Robot 6: 
+75Robot 6: 
+75Robot 6: 
+14Robot 6: 
+115Robot 6: 
+Robot 6: 1.5
+50Robot 6: 
+Robot 6: -5
+47Robot 6: 
+Robot 6: 1.55841
+No collision possible!
+Robot 7: LEG 2
+Robot 7: Current Time = 1361829786
+Robot 7: Blackboard group: Group updated @ 1361829786
+Robot 7: Key = 9
+Robot 7: datacount =10
+9Robot 7: 
+3Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+115Robot 7: 
+Robot 7: 1.5
+50Robot 7: 
+Robot 7: -5
+47Robot 7: 
+Robot 7: 1.55841
+Robot 7: coly = 1.5
+Robot 7: colx = 1.5
+Robot 7: Distance to intersection = 2
+Robot 7: Time to intersection = 2.66667
+Robot 7: 1.55841<--- Robotyaw 
+Robot 7: 1.5708<--- Ideal yaw 
+Robot 7: 1.5<--- robotx 
+Robot 7: -3<--- roboty 
+Robot 7: Distance =4.5
+Robot 7: Time =6
+Robot 7: ETA to collision = 8.66667
+Robot 7: 3.14159<--- Robotyaw 
+Robot 7: 0<--- Ideal yaw 
+Robot 7: ETA to collision = -1
+Robot 7: No collision!Robot 8: LEG 2
+Robot 8: Current Time = 1361829786
+Robot 8: Blackboard group: Group updated @ 1361829786
+Robot 8: Key = 9
+Robot 8: datacount =10
+9Robot 8: 
+3Robot 8: 
+0Robot 8: 
+75Robot 8: 
+75Robot 8: 
+75Robot 8: 
+14Robot 8: 
+115Robot 8: 
+Robot 8: 1.5
+50Robot 8: 
+Robot 8: -5
+47Robot 8: 
+Robot 8: 1.55841
+No collision possible!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829761
+Robot 9: Key = 1
+Robot 9: datacount =10
+1Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+115Robot 9: 
+Robot 9: 1.5
+50Robot 9: 
+Robot 9: -5
+47Robot 9: 
+Robot 9: 1.55841
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829766
+Robot 9: Key = 2
+Robot 9: datacount =10
+2Robot 9: 
+1Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+85Robot 9: 
+Robot 9: -1.5
+149Robot 9: 
+Robot 9: 4.9
+15Robot 9: 
+Robot 9: -1.64159
+Robot 9: Old intent!
+Robot 8: Robot 8: car8 has crashed and is now being removed
+Robot 8: Robot 8: car8 has been removed and disabled
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829764
+Robot 9: Key = 3
+Robot 9: datacount =10
+3Robot 9: 
+2Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+149Robot 9: 
+Robot 9: 4.9
+115Robot 9: 
+Robot 9: 1.5
+62Robot 9: 
+Robot 9: 3.05841
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829771
+Robot 9: Key = 4
+Robot 9: datacount =10
+4Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+50Robot 9: 
+Robot 9: -5
+85Robot 9: 
+Robot 9: -1.5
+31Robot 9: 
+Robot 9: -0.0415927
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829780
+Robot 9: Key = 5
+Robot 9: datacount =10
+5Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+42Robot 9: 
+75Robot 9: 
+14Robot 9: 
+115Robot 9: 
+Robot 9: 1.5
+86Robot 9: 
+Robot 9: -1.4
+47Robot 9: 
+Robot 9: 1.55841
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829777
+Robot 9: Key = 6
+Robot 9: datacount =10
+6Robot 9: 
+1Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+85Robot 9: 
+Robot 9: -1.5
+149Robot 9: 
+Robot 9: 4.9
+15Robot 9: 
+Robot 9: -1.64159
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829780
+Robot 9: Key = 7
+Robot 9: datacount =10
+7Robot 9: 
+2Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+149Robot 9: 
+Robot 9: 4.9
+115Robot 9: 
+Robot 9: 1.5
+62Robot 9: 
+Robot 9: 3.05841
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829782
+Robot 9: Key = 8
+Robot 9: datacount =10
+8Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+50Robot 9: 
+Robot 9: -5
+85Robot 9: 
+Robot 9: -1.5
+31Robot 9: 
+Robot 9: -0.0415927
+Robot 9: Old intent!
+Robot 9: Current Time = 1361829787
+Robot 9: Blackboard group: Group updated @ 1361829786
+Robot 9: Key = 9
+Robot 9: datacount =10
+9Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+115Robot 9: 
+Robot 9: 1.5
+50Robot 9: 
+Robot 9: -5
+47Robot 9: 
+Robot 9: 1.55841
+Robot 10: Robot 10
+Robot 10: Turning = 0
+Robot 10: Base speed = 0.75
+Robot 10: Turn speed = 0.15
+Robot 10: robotprops::properties.robotxx =-1.5
+Robot 10: robotprops::robotyy =7
+Robot 10: robotprops::properties.robotyawy =-1.5708
+Robot 10: LEG 1
+Robot 10: Broadcasting
+Robot 10: 4.9
+Robot 10: -1.5
+Robot 10: -1.5708
+Robot 10: 0.75
+Robot 10: 0.75
+Robot 10: 0.75
+Robot 10: 85<-----Robot x
+Robot 10: 15.708<-----Robot yaw
+Robot 10: Broadcasted!
+Robot 10: Entering Hotzone
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829761
+Robot 10: Key = 1
+Robot 10: datacount =10
+1Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+115Robot 10: 
+Robot 10: 1.5
+50Robot 10: 
+Robot 10: -5
+47Robot 10: 
+Robot 10: 1.55841
+Robot 10: Old intent!
+Robot 7: Current Time = 1361829789
+Robot 7: Blackboard group: Group updated @ 1361829789
+Robot 7: Key = 10
+Robot 7: datacount =10
+10Robot 7: 
+1Robot 7: 
+0Robot 7: 
+75Robot 7: 
+75Robot 7: 
+75Robot 7: 
+14Robot 7: 
+85Robot 7: 
+Robot 7: -1.5
+148Robot 7: 
+Robot 7: 4.8
+15Robot 7: 
+Robot 7: -1.64159
+Robot 7: coly = 1.5
+Robot 7: colx = -1.5
+Robot 7: Distance to intersection = 1.8
+Robot 7: Time to intersection = 2.4
+Robot 7: -1.64159<--- Robotyaw 
+Robot 7: -1.5708<--- Ideal yaw 
+Robot 7: -1.5<--- robotx 
+Robot 7: 3<--- roboty 
+Robot 7: Distance =1.5
+Robot 7: Time =2
+Robot 7: ETA to collision = 4.4
+Robot 7: 3.14159<--- Robotyaw 
+Robot 7: 0<--- Ideal yaw 
+Robot 7: ETA to collision = -1
+Robot 7: No collision!Robot 5: Current Time = 1361829789
+Robot 5: Blackboard group: Group updated @ 1361829789
+Robot 5: Key = 10
+Robot 5: datacount =10
+10Robot 5: 
+1Robot 5: 
+0Robot 5: 
+75Robot 5: 
+75Robot 5: 
+75Robot 5: 
+14Robot 5: 
+85Robot 5: 
+Robot 5: -1.5
+148Robot 5: 
+Robot 5: 4.8
+15Robot 5: 
+Robot 5: -1.64159
+No collision possible!
+Robot 9: Current Time = 1361829789
+Robot 9: Blackboard group: Group updated @ 1361829789
+Robot 9: Key = 10
+Robot 9: datacount =10
+10Robot 9: 
+1Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+85Robot 9: 
+Robot 9: -1.5
+148Robot 9: 
+Robot 9: 4.8
+15Robot 9: 
+Robot 9: -1.64159
+No collision possible!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829789
+Robot 10: Key = 10
+Robot 10: datacount =10
+10Robot 10: 
+1Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+85Robot 10: 
+Robot 10: -1.5
+148Robot 10: 
+Robot 10: 4.8
+15Robot 10: 
+Robot 10: -1.64159
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829766
+Robot 10: Key = 2
+Robot 10: datacount =10
+2Robot 10: 
+1Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+85Robot 10: 
+Robot 10: -1.5
+149Robot 10: 
+Robot 10: 4.9
+15Robot 10: 
+Robot 10: -1.64159
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829764
+Robot 10: Key = 3
+Robot 10: datacount =10
+3Robot 10: 
+2Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+149Robot 10: 
+Robot 10: 4.9
+115Robot 10: 
+Robot 10: 1.5
+62Robot 10: 
+Robot 10: 3.05841
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829771
+Robot 10: Key = 4
+Robot 10: datacount =10
+4Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+50Robot 10: 
+Robot 10: -5
+85Robot 10: 
+Robot 10: -1.5
+31Robot 10: 
+Robot 10: -0.0415927
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829780
+Robot 10: Key = 5
+Robot 10: datacount =10
+5Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+42Robot 10: 
+75Robot 10: 
+14Robot 10: 
+115Robot 10: 
+Robot 10: 1.5
+86Robot 10: 
+Robot 10: -1.4
+47Robot 10: 
+Robot 10: 1.55841
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829777
+Robot 10: Key = 6
+Robot 10: datacount =10
+6Robot 10: 
+1Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+85Robot 10: 
+Robot 10: -1.5
+149Robot 10: 
+Robot 10: 4.9
+15Robot 10: 
+Robot 10: -1.64159
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829780
+Robot 10: Key = 7
+Robot 10: datacount =10
+7Robot 10: 
+2Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+149Robot 10: 
+Robot 10: 4.9
+115Robot 10: 
+Robot 10: 1.5
+62Robot 10: 
+Robot 10: 3.05841
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829782
+Robot 10: Key = 8
+Robot 10: datacount =10
+8Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+50Robot 10: 
+Robot 10: -5
+85Robot 10: 
+Robot 10: -1.5
+31Robot 10: 
+Robot 10: -0.0415927
+Robot 10: Old intent!
+Robot 10: Current Time = 1361829789
+Robot 10: Blackboard group: Group updated @ 1361829786
+Robot 10: Key = 9
+Robot 10: datacount =10
+9Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+115Robot 10: 
+Robot 10: 1.5
+50Robot 10: 
+Robot 10: -5
+47Robot 10: 
+Robot 10: 1.55841
+Robot 10: Old intent!
+Robot 6: Leaving HotzoneRobot 6: LEG 3
+Robot 6: Victory!
+Robot 6: Robot 6:  Congratulations! car6 has run the gauntlet! It is now being removed.
+Robot 6: Robot 6: car6 has been removed and disabled!
+Robot 6: Finished!Robot 11: Robot 11
+Robot 11: Turning = 0
+Robot 11: Base speed = 0.75
+Robot 11: Turn speed = 0.15
+Robot 11: robotprops::properties.robotxx =7
+Robot 11: robotprops::robotyy =1.5
+Robot 11: robotprops::properties.robotyawy =3.14159
+Robot 11: LEG 1
+Robot 11: Broadcasting
+Robot 11: 1.5
+Robot 11: 4.9
+Robot 11: 3.14159
+Robot 11: 0.75
+Robot 11: 0.75
+Robot 11: 0.75
+Robot 11: 149<-----Robot x
+Robot 11: 62.8319<-----Robot yaw
+Robot 11: Broadcasted!
+Robot 11: Entering Hotzone
+Robot 11: Current Time = 1361829791
+Robot 11: Blackboard group: Group updated @ 1361829761
+Robot 11: Key = 1
+Robot 11: datacount =10
+1Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+115Robot 11: 
+Robot 11: 1.5
+50Robot 11: 
+Robot 11: -5
+47Robot 11: 
+Robot 11: 1.55841
+Robot 11: Old intent!
+Robot 10: Current Time = 1361829791
+Robot 10: Blackboard group: Group updated @ 1361829791
+Robot 10: Key = 11
+Robot 10: datacount =10
+11Robot 10: 
+2Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+148Robot 10: 
+Robot 10: 4.8
+115Robot 10: 
+Robot 10: 1.5
+62Robot 10: 
+Robot 10: 3.05841
+Robot 10: coly = 1.5
+Robot 10: colx = -1.5
+Robot 10: Distance to intersection = 1.8
+Robot 10: Time to intersection = 2.4
+Robot 10: 3.05841<--- Robotyaw 
+Robot 10: 3.14159<--- Ideal yaw 
+Robot 10: 3<--- robotx 
+Robot 10: 1.5<--- roboty 
+Robot 10: Distance =4.5
+Robot 10: Time =6
+Robot 10: ETA to collision = 8.4
+Robot 10: Distance to intersection = 0.1
+Robot 10: Time to intersection = 0.133333
+Robot 10: -1.5708<--- Robotyaw 
+Robot 10: -1.5708<--- Ideal yaw 
+Robot 10: -1.5<--- robotx 
+Robot 10: 3<--- roboty 
+Robot 10: Distance =1.5
+Robot 10: Time =2
+Robot 10: ETA to collision = 2.13333
+Robot 10: No collision!Robot 9: LEG 2
+Robot 9: Current Time = 1361829791
+Robot 9: Blackboard group: Group updated @ 1361829791
+Robot 9: Key = 11
+Robot 9: datacount =10
+11Robot 9: 
+2Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+148Robot 9: 
+Robot 9: 4.8
+115Robot 9: 
+Robot 9: 1.5
+62Robot 9: 
+Robot 9: 3.05841
+Robot 9: coly = 1.5
+Robot 9: colx = 1.5
+Robot 9: Distance to intersection = 1.8
+Robot 9: Time to intersection = 2.4
+Robot 9: 3.05841<--- Robotyaw 
+Robot 9: 3.14159<--- Ideal yaw 
+Robot 9: 3<--- robotx 
+Robot 9: 1.5<--- roboty 
+Robot 9: Distance =1.5
+Robot 9: Time =2
+Robot 9: ETA to collision = 4.4
+Robot 9: 1.5708<--- Robotyaw 
+Robot 9: 1.5708<--- Ideal yaw 
+Robot 9: 1.5<--- robotx 
+Robot 9: -1.375<--- roboty 
+Robot 9: Distance =2.875
+Robot 9: Time =3.83333
+Robot 9: ETA to collision = 3.83333
+Robot 9: Collision Predicted!
+Robot 9: A safe speed is =0.432331Robot 9: Broadcasting
+Robot 9: -1.375
+Robot 9: 1.5
+Robot 9: 1.5708
+Robot 9: 0.75
+Robot 9: 0.432331
+Robot 9: 0.75
+Robot 9: 115<-----Robot x
+Robot 9: 47.1239<-----Robot yaw
+Robot 9: Broadcasted!
+Robot 11: Current Time = 1361829791
+Robot 11: Blackboard group: Group updated @ 1361829789
+Robot 11: Key = 10
+Robot 11: datacount =10
+10Robot 11: 
+1Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+85Robot 11: 
+Robot 11: -1.5
+148Robot 11: 
+Robot 11: 4.8
+15Robot 11: 
+Robot 11: -1.64159
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829791
+Robot 11: Key = 11
+Robot 11: datacount =10
+11Robot 11: 
+2Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+148Robot 11: 
+Robot 11: 4.8
+115Robot 11: 
+Robot 11: 1.5
+62Robot 11: 
+Robot 11: 3.05841
+Robot 9: Current Time = 1361829792
+Robot 9: Blackboard group: Group updated @ 1361829791
+Robot 9: Key = 9
+Robot 9: datacount =10
+9Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+43Robot 9: 
+75Robot 9: 
+14Robot 9: 
+115Robot 9: 
+Robot 9: 1.5
+86Robot 9: 
+Robot 9: -1.4
+47Robot 9: 
+Robot 9: 1.55841
+Robot 10: Current Time = 1361829792
+Robot 10: Blackboard group: Group updated @ 1361829791
+Robot 10: Key = 9
+Robot 10: datacount =10
+9Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+43Robot 10: 
+75Robot 10: 
+14Robot 10: 
+115Robot 10: 
+Robot 10: 1.5
+86Robot 10: 
+Robot 10: -1.4
+47Robot 10: 
+Robot 10: 1.55841
+No collision possible!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829766
+Robot 11: Key = 2
+Robot 11: datacount =10
+2Robot 11: 
+1Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+85Robot 11: 
+Robot 11: -1.5
+149Robot 11: 
+Robot 11: 4.9
+15Robot 11: 
+Robot 11: -1.64159
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829764
+Robot 11: Key = 3
+Robot 11: datacount =10
+3Robot 11: 
+2Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+149Robot 11: 
+Robot 11: 4.9
+115Robot 11: 
+Robot 11: 1.5
+62Robot 11: 
+Robot 11: 3.05841
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829771
+Robot 11: Key = 4
+Robot 11: datacount =10
+4Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+50Robot 11: 
+Robot 11: -5
+85Robot 11: 
+Robot 11: -1.5
+31Robot 11: 
+Robot 11: -0.0415927
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829780
+Robot 11: Key = 5
+Robot 11: datacount =10
+5Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+42Robot 11: 
+75Robot 11: 
+14Robot 11: 
+115Robot 11: 
+Robot 11: 1.5
+86Robot 11: 
+Robot 11: -1.4
+47Robot 11: 
+Robot 11: 1.55841
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829777
+Robot 11: Key = 6
+Robot 11: datacount =10
+6Robot 11: 
+1Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+85Robot 11: 
+Robot 11: -1.5
+149Robot 11: 
+Robot 11: 4.9
+15Robot 11: 
+Robot 11: -1.64159
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829780
+Robot 11: Key = 7
+Robot 11: datacount =10
+7Robot 11: 
+2Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+149Robot 11: 
+Robot 11: 4.9
+115Robot 11: 
+Robot 11: 1.5
+62Robot 11: 
+Robot 11: 3.05841
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829782
+Robot 11: Key = 8
+Robot 11: datacount =10
+8Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+50Robot 11: 
+Robot 11: -5
+85Robot 11: 
+Robot 11: -1.5
+31Robot 11: 
+Robot 11: -0.0415927
+Robot 11: Old intent!
+Robot 5: Leaving HotzoneRobot 5: LEG 3
+Robot 5: Victory!
+Robot 5: Robot 5:  Congratulations! car5 has run the gauntlet! It is now being removed.
+Robot 5: Robot 5: car5 has been removed and disabled!
+Robot 5: Finished!Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829786
+Robot 11: Key = 9
+Robot 11: datacount =10
+9Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+115Robot 11: 
+Robot 11: 1.5
+50Robot 11: 
+Robot 11: -5
+47Robot 11: 
+Robot 11: 1.55841
+Robot 11: Old intent!
+Robot 11: Current Time = 1361829792
+Robot 11: Blackboard group: Group updated @ 1361829791
+Robot 11: Key = 9
+Robot 11: datacount =10
+9Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+43Robot 11: 
+75Robot 11: 
+14Robot 11: 
+115Robot 11: 
+Robot 11: 1.5
+86Robot 11: 
+Robot 11: -1.4
+47Robot 11: 
+Robot 11: 1.55841
+Robot 11: coly = 1.5
+Robot 11: colx = 1.5
+Robot 11: 1.55841<--- Robotyaw 
+Robot 11: 1.5708<--- Ideal yaw 
+Robot 11: 1.5<--- robotx 
+Robot 11: -1.4<--- roboty 
+Robot 11: Distance =2.9
+Robot 11: Time =6.74419
+Robot 11: ETA to collision = 6.74419
+Robot 11: Distance to intersection = 1.9
+Robot 11: Time to intersection = 2.53333
+Robot 11: 3.14159<--- Robotyaw 
+Robot 11: 3.14159<--- Ideal yaw 
+Robot 11: 3<--- robotx 
+Robot 11: 1.5<--- roboty 
+Robot 11: Distance =1.5
+Robot 11: Time =2
+Robot 11: ETA to collision = 4.53333
+Robot 11: No collision!Robot 7: Leaving HotzoneRobot 7: LEG 3
+Robot 7: Victory!
+Robot 7: Robot 7:  Congratulations! car7 has run the gauntlet! It is now being removed.
+Robot 7: Robot 7: car7 has been removed and disabled!
+Robot 7: Finished!Robot 12: Robot 12
+Robot 12: Turning = 0
+Robot 12: Base speed = 0.75
+Robot 12: Turn speed = 0.15
+Robot 12: robotprops::properties.robotxx =-7
+Robot 12: robotprops::robotyy =-1.5
+Robot 12: robotprops::properties.robotyawy =0
+Robot 12: LEG 1
+Robot 12: Broadcasting
+Robot 12: -1.5
+Robot 12: -4.9
+Robot 12: 0
+Robot 12: 0.75
+Robot 12: 0.75
+Robot 12: 0.75
+Robot 12: 51<-----Robot x
+Robot 12: 31.4159<-----Robot yaw
+Robot 12: Broadcasted!
+Robot 12: Entering Hotzone
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829761
+Robot 12: Key = 1
+Robot 12: datacount =10
+1Robot 12: 
+3Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+115Robot 12: 
+Robot 12: 1.5
+50Robot 12: 
+Robot 12: -5
+47Robot 12: 
+Robot 12: 1.55841
+Robot 12: Old intent!
+Robot 9: Current Time = 1361829794
+Robot 9: Blackboard group: Group updated @ 1361829794
+Robot 9: Key = 12
+Robot 9: datacount =10
+12Robot 9: 
+3Robot 9: 
+0Robot 9: 
+75Robot 9: 
+75Robot 9: 
+75Robot 9: 
+14Robot 9: 
+51Robot 9: 
+Robot 9: -4.9
+85Robot 9: 
+Robot 9: -1.5
+31Robot 9: 
+Robot 9: -0.0415927
+No collision possible!
+Robot 10: LEG 2
+Robot 10: Current Time = 1361829794
+Robot 10: Blackboard group: Group updated @ 1361829794
+Robot 10: Key = 12
+Robot 10: datacount =10
+12Robot 10: 
+3Robot 10: 
+0Robot 10: 
+75Robot 10: 
+75Robot 10: 
+75Robot 10: 
+14Robot 10: 
+51Robot 10: 
+Robot 10: -4.9
+85Robot 10: 
+Robot 10: -1.5
+31Robot 10: 
+Robot 10: -0.0415927
+No collision possible!
+Robot 11: Current Time = 1361829794
+Robot 11: Blackboard group: Group updated @ 1361829794
+Robot 11: Key = 12
+Robot 11: datacount =10
+12Robot 11: 
+3Robot 11: 
+0Robot 11: 
+75Robot 11: 
+75Robot 11: 
+75Robot 11: 
+14Robot 11: 
+51Robot 11: 
+Robot 11: -4.9
+85Robot 11: 
+Robot 11: -1.5
+31Robot 11: 
+Robot 11: -0.0415927
+Robot 11: coly = 1.5
+Robot 11: colx = 1.5
+Robot 11: Distance to intersection = -1.5
+Robot 11: Time to intersection = -2
+Robot 11: -0.0415927<--- Robotyaw 
+Robot 11: 0.957976<--- Ideal yaw 
+Robot 11: ETA to collision = -3
+Robot 11: Distance to intersection = 0.025
+Robot 11: Time to intersection = 0.0333333
+Robot 11: 3.14159<--- Robotyaw 
+Robot 11: 3.14159<--- Ideal yaw 
+Robot 11: 3<--- robotx 
+Robot 11: 1.5<--- roboty 
+Robot 11: Distance =1.5
+Robot 11: Time =2
+Robot 11: ETA to collision = 2.03333
+Robot 11: No collision!Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829789
+Robot 12: Key = 10
+Robot 12: datacount =10
+10Robot 12: 
+1Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+85Robot 12: 
+Robot 12: -1.5
+148Robot 12: 
+Robot 12: 4.8
+15Robot 12: 
+Robot 12: -1.64159
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829791
+Robot 12: Key = 11
+Robot 12: datacount =10
+11Robot 12: 
+2Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+148Robot 12: 
+Robot 12: 4.8
+115Robot 12: 
+Robot 12: 1.5
+62Robot 12: 
+Robot 12: 3.05841
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829794
+Robot 12: Key = 12
+Robot 12: datacount =10
+12Robot 12: 
+3Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+51Robot 12: 
+Robot 12: -4.9
+85Robot 12: 
+Robot 12: -1.5
+31Robot 12: 
+Robot 12: -0.0415927
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829766
+Robot 12: Key = 2
+Robot 12: datacount =10
+2Robot 12: 
+1Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+85Robot 12: 
+Robot 12: -1.5
+149Robot 12: 
+Robot 12: 4.9
+15Robot 12: 
+Robot 12: -1.64159
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829764
+Robot 12: Key = 3
+Robot 12: datacount =10
+3Robot 12: 
+2Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+149Robot 12: 
+Robot 12: 4.9
+115Robot 12: 
+Robot 12: 1.5
+62Robot 12: 
+Robot 12: 3.05841
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829771
+Robot 12: Key = 4
+Robot 12: datacount =10
+4Robot 12: 
+3Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+50Robot 12: 
+Robot 12: -5
+85Robot 12: 
+Robot 12: -1.5
+31Robot 12: 
+Robot 12: -0.0415927
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829780
+Robot 12: Key = 5
+Robot 12: datacount =10
+5Robot 12: 
+3Robot 12: 
+0Robot 12: 
+75Robot 12: 
+42Robot 12: 
+75Robot 12: 
+14Robot 12: 
+115Robot 12: 
+Robot 12: 1.5
+86Robot 12: 
+Robot 12: -1.4
+47Robot 12: 
+Robot 12: 1.55841
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829777
+Robot 12: Key = 6
+Robot 12: datacount =10
+6Robot 12: 
+1Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+85Robot 12: 
+Robot 12: -1.5
+149Robot 12: 
+Robot 12: 4.9
+15Robot 12: 
+Robot 12: -1.64159
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829780
+Robot 12: Key = 7
+Robot 12: datacount =10
+7Robot 12: 
+2Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+149Robot 12: 
+Robot 12: 4.9
+115Robot 12: 
+Robot 12: 1.5
+62Robot 12: 
+Robot 12: 3.05841
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829782
+Robot 12: Key = 8
+Robot 12: datacount =10
+8Robot 12: 
+3Robot 12: 
+0Robot 12: 
+75Robot 12: 
+75Robot 12: 
+75Robot 12: 
+14Robot 12: 
+50Robot 12: 
+Robot 12: -5
+85Robot 12: 
+Robot 12: -1.5
+31Robot 12: 
+Robot 12: -0.0415927
+Robot 12: Old intent!
+Robot 12: Current Time = 1361829794
+Robot 12: Blackboard group: Group updated @ 1361829791
+Robot 12: Key = 9
+Robot 12: datacount =10
+9Robot 12: 
+3Robot 12: 
+0Robot 12: 
+75Robot 12: 
+43Robot 12: 
+75Robot 12: 
+14Robot 12: 
+115Robot 12: 
+Robot 12: 1.5
+86Robot 12: 
+Robot 12: -1.4
+47Robot 12: 
+Robot 12: 1.55841
+Robot 12: Old intent!
+Robot 9: Robot 9: car9 has crashed and is now being removed
+Robot 9: Robot 9: car9 has been removed and disabled
+Robot 12: LEG 2
+Robot 12: Robot 12: car12 has crashed and is now being removed
+Robot 12: Robot 12: car12 has been removed and disabled
+Robot 10: Leaving HotzoneRobot 10: LEG 3
+Robot 10: Victory!
+Robot 10: Robot 10:  Congratulations! car10 has run the gauntlet! It is now being removed.
+Robot 10: Robot 10: car10 has been removed and disabled!
+Robot 10: Finished!Robot 11: LEG 2
+Robot 11: Leaving HotzoneRobot 11: LEG 3
+Robot 11: Victory!
+Robot 11: Robot 11:  Congratulations! car11 has run the gauntlet! It is now being removed.
+Robot 11: Robot 11: car11 has been removed and disabled!
+Robot 11: Finished!

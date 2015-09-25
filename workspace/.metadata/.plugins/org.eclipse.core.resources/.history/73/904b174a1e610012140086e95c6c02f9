@@ -1,0 +1,104 @@
+/*
+ * ex0.cc
+ *
+ *  Created on: Dec 29, 2012
+ *      Author: kanaad
+ */
+#include <stdio.h>
+#include <iostream>
+#include <libplayerc++/playerc++.h>
+using namespace std;
+using namespace PlayerCc;
+bool detectCrash(Position2dProxy *p2dProxy, int robotnum) {
+	if (p2dProxy->GetStall()) {
+
+		cerr << "Robot " << robotnum << " has crashed at " << "("
+				<< p2dProxy->GetXPos() << ", " << p2dProxy->GetYPos()
+				<< ")! \n";
+
+		return true;
+	}
+	else{
+	return false;
+	}
+}
+
+int main() {
+	bool turn = false;
+	int robotnum = 3;
+	try {
+		PlayerClient robot("localhost");
+		Position2dProxy p2dProxy(&robot, robotnum);
+		robot.Read();
+		double changeangle = M_PI / 4;
+		double robotx = p2dProxy.GetXPos();
+		double roboty = p2dProxy.GetYPos();
+		double robotyaw = p2dProxy.GetYaw();
+		cout << "robotx =" << robotx << "\n";
+		cout << "roboty =" << roboty << "\n";
+		cout << "robotyaw =" << robotyaw << "\n";
+		while (fabs(roboty) > 3.0 || fabs(robotx) > 3.0) {
+			cout << "forward movement" << "\n";
+			p2dProxy.SetSpeed(.25, 0, 0);
+			robot.Read();
+			robotx = p2dProxy.GetXPos();
+			roboty = p2dProxy.GetYPos();
+			robotyaw = p2dProxy.GetYaw();
+			detectCrash(&p2dProxy, robotnum);
+		}
+		double idealangle = robotyaw + changeangle;
+		if (idealangle > M_PI) {
+			idealangle = idealangle - (2) * (M_PI);
+
+		}
+		if (turn) {
+			cout << "ideal angle =" << idealangle;
+			while (fabs(idealangle - robotyaw) > .05) {
+				cout << "idang" << idealangle << "\n";
+				cout << "yaw movement" << "\n";
+				p2dProxy.SetSpeed(0, 0, .15);
+				robot.Read();
+				robotx = p2dProxy.GetXPos();
+				roboty = p2dProxy.GetYPos();
+				robotyaw = p2dProxy.GetYaw();
+				bool y = p2dProxy.GetStall();
+
+			}
+		}
+		while (fabs(roboty) < 3.0 && fabs(robotx) < 3.0) {
+			cout << "x movement" << "\n";
+			p2dProxy.SetSpeed(1.0, 0, 0);
+			robot.Read();
+			robotx = p2dProxy.GetXPos();
+			roboty = p2dProxy.GetYPos();
+			robotyaw = p2dProxy.GetYaw();
+		}
+		if (turn) {
+			idealangle = robotyaw + changeangle + .05;
+			while (fabs(idealangle - robotyaw) > .1) {
+				cout << "idang" << idealangle << "\n";
+				cout << "yaw movement" << "\n";
+				p2dProxy.SetSpeed(0, 0, .15);
+				robot.Read();
+				robotx = p2dProxy.GetXPos();
+				roboty = p2dProxy.GetYPos();
+				robotyaw = p2dProxy.GetYaw();
+			}
+		}
+		while (fabs(roboty) < 18.0 || fabs(robotx) < 18.0) {
+			cout << "x movement" << "\n";
+			p2dProxy.SetSpeed(.25, 0, 0);
+			robot.Read();
+			robotx = p2dProxy.GetXPos();
+			roboty = p2dProxy.GetYPos();
+			robotyaw = p2dProxy.GetYaw();
+		}
+
+	} catch (PlayerCc::PlayerError &e) {
+		const char* c = e.GetErrorStr().c_str();
+		cout << c;
+	}
+	cout << "end";
+	return 0;
+}
+
